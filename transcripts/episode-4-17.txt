@@ -1,0 +1,289 @@
+[00:00:00] John Stanton: I think of museums, we're seeing people in history come alive again through AI and be able to teach their story to perhaps children. Maybe it's a, uh, you know, smaller school, lower budget, can't take the three hour trip to a museum. Now we'll have access right there in the classroom through technology to be able to have very similar access, similar experiences to.
+
+Perhaps the schools that have larger budgets that are closer to some of these resources.
+
+[00:00:37] AI Announcer: Welcome to the conversations on Applied AI podcast, where Justin Grammons and the team at Emerging Technologies North talk with experts in the fields of artificial intelligence and deep learning. In each episode, we cut through the hype and dive into how these technologies are being applied to real world problems today.
+
+We hope that you find this episode educational and applicable to your industry and connect with us to learn. Learn more about our organization at AppliedAI. mn. Enjoy.
+
+[00:01:08] Justin Grammens: Welcome everyone to the Conversations on Applied AI podcast. I'm your host, Justin Grammins, and our guest today is John Stanton. John's specialties include working with nonprofits, specifically in the areas of organizational development, management, sales, marketing, and branding.
+
+He's currently the Vice President of Growth Strategy at Accord. Accord makes it possible for people living with disabilities to achieve their personal and career goals and live a full life. Their services and programs use person centric thinking and are experts in leading the way when it comes to mental health.
+
+Him and the team are currently working on some really interesting AI initiatives in the nonprofit space that I'm excited to learn more about today and have them share with you, our listeners of the podcast. So thank you, John, so much for being on the program today.
+
+[00:01:45] John Stanton: Yeah, thank you. I'm, I'm excited to be here.
+
+[00:01:47] Justin Grammens: Awesome. We love talking to people that are working in the industry and that are kind of taking a look at some specific applications. And I'm sure we'll talk through a lot of those things, but you know, I talked a little bit about where you are today. Maybe you could sort of paint a picture of kind of how you got to where you are today.
+
+What was, what's been your career trajectory?
+
+[00:02:03] John Stanton: Yeah, sure. I've always been somebody who's just been curious is probably one of those keywords when I think about my trajectory and how I got to where I am today from getting yelled at as a kid for taking a TV apart, you know, and then hiding it under my bed to trying to figure out how to manipulate different games that we had from SimCity and.
+
+Figured out how all that worked on the computer and, you know, later kind of in life, I got curious about websites and web development and taught myself just HTML. I wouldn't say that I'm a developer per se, but I know enough to be dangerous. And so from there, I found myself working in education and teaching.
+
+Entrepreneurship and small business management through the university of north central here in the twin cities and also working at a private school and marketing and developments. And we always saw ourselves as pretty progressive when it came to technology. We knew that that's the future. One of the things that we would always talk to parents about is that, you know, your children that are coming in as kindergartners, their jobs haven't even been created yet.
+
+What they will work on, we don't know yet. And, um, so it was always a push in that side of things to be innovative and that kind of led me to, Accord, and Accord is a non profit, like you said, here in the, the Twin Cities, and we support a little over 3, 000 people, people with disabilities and mental health with a variety of programs.
+
+And coming into this industry, it was something that I saw that was lacking in innovation, lacking in funding, use of technology, and it really kind of pulled at my heart. Hey, we can do things. We can accelerate this. The joke is that, you know, you have all the other industries are pushing and leading the way forward when it comes to technology advancement, 10 years behind that is, is about healthcare, but then 10 years behind that is social services.
+
+And that, again, it comes down to funding and things like that. But I, I started asking the question, like. Why, what can we do to help change this industry for some of the most vulnerable people in our society and help create access for them through a variety of different approaches. And so that's kind of how I got to, to where I am.
+
+And, you know, I think that word accessibility is, is huge when I think of AI and. Kind of our approach to technology and what we can do with it.
+
+[00:04:44] Justin Grammens: Yeah, I love it. Yeah. So you seem very mission driven, I guess, regards to the things that you find passionate and you'd sort of dive in deep to those and want to work in an organization that does that.
+
+I think, you know, you and I probably share some common similarities in a couple of aspects. I teach actually at the university of St. Thomas. I've been teaching there for the past 10 years or so. So education is important to me as well. And really one of the tenants of the applied AI group. Yeah. It is really, we're a 501c3, uh, we're really here to serve the common good and educate people on what's possible.
+
+And I see people of all ages, actually, you know, young, medium, old, whatever it is with regards to the possible of artificial intelligence. And it sounds like, you know, it's interesting, nonprofits don't have a whole lot of money, you know, ours included. And so they would be ripe, you think, for automation.
+
+They would be a right place where people should start looking at it. But yet, You're finding that maybe, maybe you can expand upon this, that they're just maybe the last to find out or the last to know about maybe what's possible.
+
+[00:05:39] John Stanton: Yeah, from my view is there's always those two barriers of technology and funding when it comes to nonprofits.
+
+And a lot of times people who enter into a nonprofit are usually entering in because they have a passion for something. They might not be a great operator. But they just love the mission. And so especially in our industry, it's full of passion and heart for the people that we support. And when it comes to that, sometimes the innovation and those other aspects are more in that operator side of things.
+
+And so it doesn't always translate over. And when it comes to. Even the budgeting process, you know, we've, we've talked about this before here, you know, the traditional, uh, nonprofit budgeting process is year over year. So it's just a single year instead of looking at a three year window, five year window when it comes to advancing maybe a strategic approach to something or initiative.
+
+For us, you know, we've started adopting that approach probably about seven years ago, where we started looking at, okay, what is our three year picture? What is our 10 year picture? And start building towards that strategically as well, especially when it comes to uh, Advancement in technology and the use of it within social services.
+
+[00:06:58] Justin Grammens: Gotcha. Yeah, you kind of said social services are just even further out. I guess, you know, I thought health care was pretty far to make change, but social services are even further. And what are some of the reasons, I guess, do you think around that? Maybe you touched a little bit on it. Maybe it could be just costs and funding awareness.
+
+Are there other things that jump out at you as to why we're talking 20 years out for some of these organizations?
+
+[00:07:18] John Stanton: Yeah, I think again, it comes down to that funding. It comes down to advocacy efforts, and it has been a slow roll for people with disabilities. When it comes to advocacy at the state level, there's been some great work over the last few years and rallies at the Capitol for people with disabilities to create awareness, advocacy efforts, you know, and so we're starting to see some of those things change.
+
+But you throw in a pandemic, you throw in wage flation, and our industry has been really smacked hard when it comes to that, because there are a lot of the rates that get paid out, uh, haven't changed in over nine years. And so you can picture the, the shrinking margins for a lot of those social service organizations, and You know, I think of the necessity to be able to transform through AI and the use of those tools.
+
+It's becoming required to be able to sustain.
+
+[00:08:12] Justin Grammens: Yeah. And one, one of the words you mentioned was accessibility. And I think, you know, if you think back to November of 2022, when, you know, open AI created this Chat GPT thing, the beauty of it, I think, was that it was just so accessible, right? Anybody could come and hit this website and start asking questions.
+
+And actually you could literally try it out in real time. And it was just, I think it was just jaw dropping. So I feel like that was a great sort of milestone regards to making everybody accessible to see what's powerful. What the potential of AI is.
+
+[00:08:42] John Stanton: Oh yeah, it was huge. I remember when it came out and I, I just started asking questions, you know, and just random questions.
+
+I remember. It was probably the following spring. So months into it, I was sitting there and I was in charge from a family perspective, I was in charge of making the, the mother's day meal for my mom and for everybody, and I was just having the hardest time just trying to figure out what I should do. I went to chat GPT and I said, Hey, what are the top five options for a mother's day meal that I can make?
+
+Boom, let's sit out. And then I asked for. What are the ingredients? What are the things I need? Can you give me a plan? And then it did. And I just followed that plan and everybody thought it was great on mother's day and I didn't tell him it was AI. I took all the credit initially.
+
+[00:09:28] Justin Grammens: Absolutely. I have a similar story with my kids and at Christmas time, we always do like a treasure hunt for this big gift for them.
+
+And you know, I always have to sort of like. Make up these riddles and these rhymes, they kind of run around the house, you know, and one thing's in, you know, it's hidden in the dryer, and that's a clue, and then they find another clue, and they find, you know, the other ones are basically where their shoes are at, so, anyways, yeah, I sat there that year, and I'm like, dude, I'm just gonna throw this at you at GPT and see what happens, and it created this thing, and I didn't say a word about it, I was just like, yep, I came up with all those fancy riddles and rhymes and everything.
+
+You know, my mind's kind of going a couple of different directions. Number one is, yeah, I'd love to hear some specific examples, I guess, of how you guys are using it and how you're seeing nonprofits use it. And then sort of the other side of it, too, we'll get to this, but kind of the trust factor. The example that you and I gave is pretty, I guess, you know, mundane in some ways.
+
+It could say that something's wrong, right? But how do you find it within these nonprofits, these organizations? Like, how can you trust what comes out of it? Because I'm guessing it potentially could Lead to, especially if it's in health care or mental awareness, might actually give something that might be wrong.
+
+It might hallucinate in some ways. So that's kind of a two pronged question, I guess, in some ways. But yeah, those are some of the things that are sort of like on my mind. If you want to start with either one of those first.
+
+[00:10:38] John Stanton: Yeah, no, I think I'll jump in on how we're using it. And so probably about a year, year and a half ago, we started having conversations about innovation.
+
+You know, like we said earlier, you know, funding is tight for nonprofits, especially in our space. And we have to think outside the box of non government funding and think outside the box of even grant funding, foundations. That has gotten extremely competitive in those areas. There's more nonprofits, there's less funding to go around as well.
+
+And so for us, we needed to think innovatively outside the box. And so we created a, just a small group of just dreamers, people who can think of ideas. And one of them that we came up with as we were thinking about the people we support. Was there is a barrier of entry into services and the barriers are the complexity of our service of social services, home and community based services, H.
+
+C. B. S. Just the complexity and the insider language that's used if you try to navigate yourself from online to whatever it might be. And also just when we think of that complexity. We also think about just simple language. There were a couple things out there that could help people, but nothing that was designed for them.
+
+It was designed by somebody inside. And so we saw these barriers for people who are looking for supports, much needed supports, to be able to access it, to have. Some of those questions answered, there's so many acronyms in our industry, it's wild, and there's acronyms that are duplicated too, so it's like, well, what is a CRS, and it can be two different things, so for us, we just started going down this pathway, and we said, Why don't we build an app and try to get AI involved?
+
+This was before chat. GPT really kind of started showcasing and so we knew as we go down this pathway we'll be able to start finding ways to bring in AI some way somehow. So I had a developer friend, we pitched the idea, he started creating it for us and. We started using, cause then chat came out. So I started using chat to actually help me figure it out.
+
+Like, how do we do this?
+
+[00:12:59] Justin Grammens: Yes.
+
+[00:12:59] John Stanton: And so we created, it's called the virtual support navigator. We're about to launch it out here and it might already be out here very soon. So I was going with that, is that the chat GPT that we started using to figure out These different aspects. We knew that there needed to be a search function that was easy, but it couldn't be just a general search.
+
+If it's general search, there can be complexities that can return maybe the wrong information that people would need. So. We went through and thought through a decision tree and we didn't create it. ChatGPT created it for us. I started asking the questions, you know, are you familiar with HCBS? Are you familiar with Minnesota's DHS system?
+
+You know, are you familiar with, and then I would go through some of the types of supports that Accord provides to double check to make sure that it was familiar with it.
+
+[00:13:57] Justin Grammens: I was just going to say, that's one of these things that I think people don't realize is you kind of have to have your checks and balances and that is one of the things that I, so it comes down to this idea of good prompting and these large language models will kind of just respond, always respond, unless you tell it, don't respond if you don't know anything, a lot of these things will just start giving you information and the more you can hone in on, have you heard of this yet, explain to me your angle, In fact, a lot of these large language models, you actually can ask it, tell me your thought process.
+
+How did you work through this problem? But I love that application where you're using it as an ideation generator in a lot of ways, right? You're sort of putting this large language model in, and then you're just using it to bounce ideas off or give you suggestions.
+
+[00:14:37] John Stanton: Yep. Yeah. So it, it helped us create this entire decision tree that then could be more person centered to that individual.
+
+So if they answered this, this is the next question we would prompt them with. And so it, it helped us build out the whole thing and then the other aspect to it. And as we were developing it, your audience is probably familiar with this. You're familiar with it. My developer kept on telling me, Hey, make sure that we're still staying on the MVP, the most viable product.
+
+I'm a dreamer. I start thinking about all the bells and whistles way before we even bring it to market. So he was like, we got to hone it in. But the other thing that we thought was going to be really important is something in, in the healthcare industry and our industry is social determinants of health.
+
+And so it's the idea that there are social elements of every individual, more of a holistic view of their health, is impacted by their income levels, about where they grew up, about their education, and all of these other aspects that feed into a person's health. And so the social determinants of health aspect was really important for us to be able to also have something tied into this.
+
+So then we can say, Hey, here's the baseline of people using this app. Is there ways that we can enhance their social determinants of health? The one thing that I've also noticed in the industry is that it's when you talk about social determinants of health, it's all qualitative, that's kind of where it is.
+
+And for me, I'm like, I need to measure it somehow. I want it quantitative. So again, I went to chat. I said, Are you familiar with social determinants of health? It responded. It clearly knew what it was. It was able to break it down into the categories. And I pitched the idea to it. And I said, Hey, I'd like to have a question, kind of a survey with questions in each one of these categories.
+
+So it pumped out these amazing questions for it. But then again, I wanted it something that I could measure with a number. So I prompted it again and it was able to put number values to the responses of what the user would put in. So then I had exactly what I was looking for. So we have in the app a social determinants of health scoring tool.
+
+That we can then feed back and give prompts to those users that might have lower scores in certain areas, tools, and helpful tips to be able to help, you know, increase that number for them. So, that's kind of some of the usage of the app that we've been using. Building out that, I guess, some of the ways that we're using it here at Accord for the industry.
+
+And then the app itself internally has now sparked so many other ideas. A lot of it is around operations. So, talking to our case management team. Figuring out how they do different workflows and finding out, hey, we can actually automate this and make it much simpler for you by bringing it into a GPT and develop it that way.
+
+So instead of that new case manager having a question and then going to their manager, the manager then opening up like a Google Drive to show them the document that will explain the whole thing on how to do it. We can simplify that where they can just simply ask the GPT that we create and speed up that whole process form.
+
+[00:17:52] Justin Grammens: That's great. Yeah, no, I think, you know, I use the analogy of like, you know, a Google search or back in the day, you basically would get a whole bunch of references and it's like walking into the library and the librarian saying, here's a list of books, go upstairs and search around the library and find them all and choose whichever ones you want.
+
+Whereas with basically, you know, an AI agent or these large language models, it's already summarized it all for you and it condenses and gives you. the best response that it possibly can, ideally based on data that's been grounded. And so it sounds like you guys have, you know, a core set of documents or a core set of, I guess, known rules and regulations and terminology that you can kind of make sure that you're basing it off of.
+
+[00:18:28] John Stanton: Yep. Yeah. And it makes it a little easier because you're able to then go into your other question, you know, how do you know if it's right? How do you know that it's not hallucinating? That is Spot on when you put the information in, when you're building out that GPT, it's referencing that information that you have already determined to be the right information.
+
+So then you can test it that way. So.
+
+[00:18:48] Justin Grammens: Yeah. Are you guys using your own custom GPTs like through OpenAI and that sort of, they had launched that tool, I guess, earlier this year.
+
+[00:18:55] John Stanton: Yeah. And I have to just kind of give a shout out. I was at the last Applied AI Conference. That's where I met Lori. Oh, nice. Uh, Ryan there.
+
+Yeah. So her presentation spurred me on to reaching out to her just to learn a little more about it. Yep. And I mean, after my conversation with her, I, I went back, you know, we, we started creating some of these GPTs. To be able to help just speed things up. And one of them is where we're going to be bringing it into the app, a GPT, the virtual support navigator, GPT that we've already started testing.
+
+So
+
+[00:19:27] Justin Grammens: nice, nice. Yeah, you mentioned acronyms. I mean, I think that's a great use case. And people don't understand a lot of these terminologies and in any specific industry, there can be. Words that mean certain things. What does this look like for humans in the future? I mean, so I like to ask people a couple of questions.
+
+I mean, do you feel like that your new agent that you're building or your chat bot, do you think that's taking away a job or two, or do you think people are scared of it? I don't know. I just want to kind of want to get your sense of what you're seeing, guys. You guys are going to roll this out.
+
+[00:19:56] John Stanton: I think for us, when we think about, you know, the different roles and how they would be impacted, I go to that case management example.
+
+What we're doing is that we're speeding up time for that individual case manager that then we'll be able to spend more time with the individuals that are on their caseload and be able to be even more person centered for that individual. So it's really taking away some of the paperwork movement to allow us to support more people.
+
+And impact more people. So that's one example that I would say. And another one that I would bring up is a lot of this as you learn it, as you're diving in to how to use these tools, it's not taking away jobs, it's really creating new roles and new jobs as well as we think through it. So, you know, I talked to our marketing manager and how we're.
+
+Going to be developing a brand GPT so then we can expand kind of his ability to answer questions. It'll be kind of like a, an assistant that could roll out to other managers. So then they know kind of some of our, the Accord brand guidelines a little faster instead of having to ping him. So then he can do more work.
+
+So a lot of it is for us, we see it as an opportunity to do more and reach more people.
+
+[00:21:12] Justin Grammens: For sure. Yeah, and you found it pretty easy. I mean, with regards to creating custom GPTs, I've created a few of them. It seems like, you know, they've really made the interface. You don't need to be a coder, right?
+
+[00:21:21] John Stanton: Yeah, I loved that.
+
+I was nervous in the beginning, but I always go with, Hey, dream big, start small. But most of all, start is like what runs through my head all the time with things that might be a little scary. I might be a little timid. So I just did it. I was amazed how easy it was. You don't need to know any coding. The setup is really, you're just working with.
+
+Chat GPT, and it's just asking you and prompting you the questions of what you want to build and it builds it for you, the whole thing. I thought that was great. If you wanted to, you can go into a configuration setting and kind of modify other pieces. But it was very simple for somebody to be able to just.
+
+Enter in for the first time. And I loved it. So, yeah,
+
+[00:22:01] Justin Grammens: it's cool. You mentioned Laurie because yeah, she was on the podcast just last month. And that was one of her main things was just get started. That's her whole sort of mantra is just think about where you can start applying these tools and just try something because it is all about experimentation and like you said, curiosity in a lot of ways.
+
+[00:22:19] John Stanton: Yeah. And, and one thing that kind of that, you know, just start mentality. The other thing that I think through the one. That brought me to the first Applied AI Conference was be at the table. Something that I think about, you know, and, and tell other people, you have to be at the table. You might not understand the conversation in the beginning.
+
+But when you are at the table, you'll start hearing the conversation and you'll start picking up nuggets here and there and being able to then have those different aha moments. But it's all about being at the table, be at the conversation, where the conversation is, you might not know. What everything is being said, and I've sat through different sessions before where I'm like, well, I don't know, this might not be my track, but the more that you're there and you're really kind of diving in, you start picking these things up and that intimidation factor of technology that can be there for people who aren't there.
+
+Maybe necessarily used to it, it starts to fade because you begin to have that experience. So,
+
+[00:23:19] Justin Grammens: yeah. Well, I appreciate you coming to the Applied AI conferences and attending those and probably in our meetups as well. Are there industry specific conferences, I guess, in your industry around, I mean, I'm sure there are that you attend with regards to, you know, nonprofits and sort of work in this mental health space.
+
+[00:23:36] John Stanton: Yeah, there's conferences. I would say when it comes to technology, I think it's still lacking and I think that we're starting to kind of push the envelope as well. So there's a local conference that's happened here for industry providers. It's a membership group, but they put on a little larger one that is down in Shakopee.
+
+And so that's about 800 some people, we're going to go there, we went there and we talked about the app and started pushing those conversations along with some of the national ones as well, where we're able to start having those conversations. One that comes to mind that's actually going to be happening in October is the Minnesota Council on Nonprofits has their annual conference and there's going to be some AI conversations there, which I'm looking forward to as well.
+
+So.
+
+[00:24:22] Justin Grammens: Yeah, it seems like AI is obviously popping up in every industry. And this is what I think is so fascinating about this. You know, I kind of jumped into this in 2019, kind of went all in with the Applied AI group. And, you know, we continued to meet first Thursday of the month throughout the pandemic.
+
+And now we're meeting multiple times a month. And the beauty of it is, yeah, it's such a broad technology. People call it a general purpose technology. In a lot of ways, it's more like, you know, electricity. It's going to be infused into everything that we do. And so what I've been talking with, you know, is going to various industry conferences and trying to say, you really should start thinking about how we can use this.
+
+And what's fun for me is I need to know a little bit about the industry, obviously some specific use cases, but at the end of the day, I'm able just to kind of bring sort of a broad based knowledge to everything that's going on there. So it sounds like you're seeing the same thing with some of these nonprofit events where people just kind of not need to be sort of aware of what's happening on the technology side.
+
+[00:25:13] John Stanton: Yeah, and I would say, too, that what we're seeing is there's some excitement, but there's also that fear factor to, you know, when we talk about health care, we talk about social services, we're under HIPAA, and so it's how can you use some of these AI tools and still Be protected from not sharing, you know, PHI and things of that nature.
+
+And so those are the conversations that are happening now, along with organizations like Accord, where we need to start figuring out what is our AI policy. Uh, that we need to roll out for staff and have those conversations and what's appropriate usage and train on it as well. Wow.
+
+[00:25:52] Justin Grammens: I'm glad you guys are starting to think about that because I talked to so many organizations and I would say, you know, less than 10 percent are starting to put those things in place.
+
+It's like the wild, wild west. People are just like, don't use the tool, but yet, you know, they don't really know if they're using it or not, or not using it in a sandbox environment. So that's very smart of you guys to start putting together some procedures and policies. Are you using ChessGPT to generate some of those things?
+
+Hey, you know, I
+
+[00:26:16] John Stanton: mean, it'd be great. Yeah, no, we we've used it to kickstart some of those conversations to, to kickstart and jumpstart what a policy would look like and things of that nature. But to your point, we recently had an AI lunch and learn, and we just wanted to, to see how our staff using it, because we know.
+
+People are using it. They might not be talking about it or sharing about it, but it's impacting their personal life. They're going to be bringing it into work and using it there. And so we needed to start seeing, okay, how are people using it? And we found some really great ways that people were able to use chat GPT.
+
+When it came to a person that they were supporting, they were able to take some of those diagnosis, put it into CHAT GPT and find out ways to better support that individual without sharing the PHI, without sharing that information. And so, And that's kind of the thing when you got to get a pulse on the organization to like, how are people using it so you can identify that better policy as well.
+
+So
+
+[00:27:18] Justin Grammens: that's a great tip for anyone that's listening here. Yeah, set up a lunch and learn, have an open dialogue and discussion because. Everyone's heard about it and like you said, they're starting to bring it into their work and if they're not told one way or the other, they certainly could be doing things that maybe go against the policy and especially some of these free tools, you know, we're talking about chat GPT, but you know, there's obviously Claude and perplexity and there's a number of these other ones that are out there.
+
+And a lot of the free tools obviously are just taking and ingesting the information. So you just got to be sure, understanding what the terms of service are around those things. I love the idea of anonymized too as well. I mean, you can just kind of generalize it. Hey, if you were in this particular situation, how would you handle this?
+
+That sounds like, you know, the use cases that you guys are looking at is not, of course, we're far, far away from diagnoses. We're just really around suggestions or really just around other alternative things you might want to think about, right?
+
+[00:28:07] John Stanton: Yeah. And what are some suggestions? So I wouldn't say that you can use chat GPT or a large language model to diagnose a situation, but if those things have already been identified from the primary care and other things as well.
+
+There's ways to be able to find out quickly, different ways to approach and have a better person centered approach to individuals. Gotcha.
+
+[00:28:32] Justin Grammens: Yeah. So you guys are working mostly with large language models, I guess, and chat kind of one of the other questions I'd like to ask is, you know, have you seen any other projects just work or non work related that you're like on the internet, you're like, that looks kind of interesting.
+
+Like, what are some cool things? That maybe you might've seen in your sort of personal reading or what have you.
+
+[00:28:48] John Stanton: Yeah. Circling all the way back to the beginning of our conversation, that word of accessibility. So accessibility, I think of that and I start looking at the different tools that are coming out, the different apps that are coming out.
+
+And how it's going to be able to create greater accessibility for people, whatever their barrier might be. For Accord, we work with people with disabilities, but it could also be somebody who is in a rural area that doesn't have a lot of access that a city may have from different resources. What we're doing with those apps as a society, we're able to bring a lot of those things.
+
+To the rural area, when I think of museums, I think of some of the things we're seeing people in history come alive again, right through AI and be able to teach their story to perhaps who don't have. Maybe it's a, you know, smaller school, lower budget, can't take the three hour trip to a museum. Now we'll have access right there in the classroom through technology to be able to have very similar access, similar experiences.
+
+To perhaps the schools that have larger budgets that are closer to some of these resources. I can just see some of those apps already starting to develop where it's going to create just that greater access for people. Absolutely. Really cool
+
+[00:30:14] Justin Grammens: stuff. I mean, I think you're hinting towards augmented reality, virtual reality type, those types of applications.
+
+[00:30:19] John Stanton: Yeah, those, yeah, kind of that, that virtual reality, that virtual person example would be like Abraham Lincoln being able to tell his story to you and, and kind of hear his voice and his mannerisms and be able to see those things start to come alive on a screen. Pretty cool stuff.
+
+[00:30:35] Justin Grammens: Yeah, it was one of the guys here in town, Nick Roseth has been on the podcast.
+
+He spoke at a prior Applied AI conference, but he has a pretty interesting thing for museums specifically, where you basically walk up and. It looks like a flat picture to everybody, and it kind of has a little tag or description about what's happening. But yet, if you have an app, you point it at it, or ideally, you potentially could be halfway around the world, and you're just using VR goggles, but then all of a sudden, it comes to life.
+
+And like you said, Abraham Lincoln comes out and just starts talking to you, or Ulysses S. Grant tells you about his history. Way more immersive experiences. I know MetaQuest that I remember seeing some, and again, it kind of comes and goes. It seems like it's interesting. And then I stopped seeing, you know, advertisements for it, but there's kids wearing these things and they're interfacing with dinosaurs, you know, or there's like woolly mammoths that are basically in life and they're walking alongside them.
+
+You know, it's like, wow, that, that's quite very cool. Very cool. Immersive experiences.
+
+[00:31:23] John Stanton: Yeah. I actually talked to Nick. I found him just through LinkedIn, reached out one time and just had a conversation. Cause one of our ideas when it comes to people with disabilities. Is how can you use VR to be able to create, again, that access for them?
+
+And we have people who might be using wheelchairs and people who might not be able to be as mobile as others. And how can we get them to be able to have those experiences that the rest of us may take for granted? I think about swimming, being able to go out into the ocean, go and swim underwater. You know, for somebody maybe at what we have here is a day support program where people come during the day and, and spend some time activities, skill building.
+
+But what if there was a VR experience that they were also able to have to help build skills, to help experience things that they haven't been able to do before. Again, that the rest of us take for granted, traveling, getting on an airplane, things of that nature, and being able to, to have those experiences.
+
+I think when it comes to VR. It's bringing that access to them. Yeah,
+
+[00:32:27] Justin Grammens: yeah, for sure. So some of those things are a little bit out there. I think it was interesting is even like on my Android phone, there's so many apps that I have gone out and spoken to people at senior living centers, for example. And even something as you're able to hold it up to a piece of.
+
+Like sometimes these people have low vision and so it can actually read, it can actually just read off a menu or read off actually nutritional information. There's some really, really interesting apps that I know Google has, has released and I'm sure Apple has some similar ones that help people with low vision and then also even sort of helping them navigate sort of like daily life.
+
+What should I do today? Conversational type things, but you just think about people that are in the senior sector, I guess. That's You know, oftentimes they can feel lonely, for example, they can actually, again, not able to see things. This thing will like translate menus and stuff like that. I showed an example where pointed at a French menu, it translated all in English, right?
+
+So what I think is fascinating is, is no, as humans get older and older, a lot of their senses deteriorate. And so. How can you actually bring technology and to sort of bring some of those sensory functions back to me, that's a component of accessibility in some ways.
+
+[00:33:30] John Stanton: One as well, because I just saw those glasses for a specific diagnosis people have where they start losing their vision, but they do have peripheral vision.
+
+Yeah. And so then it's able to create through knowing and understanding how their eyesight is to create that image for them again. So they're able to wear the glasses and be able to see without that. Dark center in front of them. So I thought that was amazing when it comes to that. That's awesome.
+
+[00:33:58] Justin Grammens: Well, cool, John, I guess, uh, there's two kind of last questions.
+
+I mean, number one is how do people get ahold of you if
+
+[00:34:02] John Stanton: they want to reach out? I think number one, you can find me on LinkedIn, John Stanton, and you can also find me right at Accord. org. You can go to our website and check us out and reach out. Cool.
+
+[00:34:15] Justin Grammens: Yeah, we'll put links, you know, on all of our podcasts.
+
+We have links to things that we've talked about. So I'll make sure those are in the liner notes, how people can contact you. And then also, you know, we touched on a lot of different subjects here today. I always sort of leave it open up at the end. Like, was there anything else that you wanted to talk about?
+
+Any sort of key point, I guess, that maybe I overlooked or didn't, didn't really address that
+
+[00:34:31] John Stanton: you'd want to share? Uh, the one thing that I would say is just kind of reiterating some of the things that we've talked about, uh, already, but I would just keep encouraging people to be at the table. Be at the table for these things.
+
+It is the beginning of something that I believe is just as revolutionary as electricity, as the internet. It's going to transform things. And we're only at the beginning. And so being at the table, being at the. The forefront of these things, it's exciting. So I would just encourage everybody to be at the table and check out all of the applied AI events.
+
+If they haven't been to any of them yet, they need to start going to them. Great. Cool. Thanks for the plug there for sure. Yeah, absolutely. I
+
+[00:35:13] Justin Grammens: do like to say, you know, it's, it's only going to get better. So this stuff gets better based on usage and time and more and more information and us sort of training these, these artificial intelligence systems.
+
+So. Where we're at now. And I even think back to, we all say, Oh, chat GPT 3. 0 or whatever was kind of, you know, it was a revolutionary moment. It is. But now 18 months later, look at how much it's doing. And 18 months later from now, it's going to be doing even more. So everything's changing so quickly. So it's just going to keep getting better and better.
+
+[00:35:40] John Stanton: Yeah. We, we might be talking about chat GPT right now, but we don't know what we're talking about in six months from now. Absolutely. There there's new things right on the horizon. It's always changing. Yeah, for sure.
+
+[00:35:50] Justin Grammens: Well, great, John, I appreciate your time today. Thank you so much for sharing your knowledge and sharing some real world applications that you guys are using over there at Chord and look forward to having you back, having you attend some of our events and keeping in touch.
+
+[00:36:02] AI Announcer: You've listened to another episode of the Conversations on Applied AI podcast. We hope you are eager to learn more about applying artificial intelligence and deep learning within your organization. You can visit us at AppliedAI. mn to keep up to date on our events and connect with our amazing community.
+
+Please don't hesitate to reach out to Justin at AppliedAI. mn if you are interested in participating in a future episode. Thank you for listening.

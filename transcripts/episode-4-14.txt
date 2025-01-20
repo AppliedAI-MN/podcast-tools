@@ -1,0 +1,353 @@
+[00:00:00] Nick Roseth: There's still limitations around rag and what it can find. You'll give it some data sometimes, and it'll come back and say, I have no idea what you're talking about, which gets super frustrating. Right. And so people will shut down if that happens. And so this is trying to understand this gap between short term massive innovation and long term slow adoption has kind of led me down the rabbit hole of looking into what's called human factors psychology, which is kind of the study of.
+
+Why, why will some technologies work? Why will others not? What is the acceptance or the rejection? And then you can take that and totally apply it to AI.
+
+[00:00:38] AI Voice: Welcome to the conversations on Applied AI podcast, where Justin Grammens and the team at Emerging Technologies North talk with experts in the fields of artificial intelligence and deep learning.
+
+In each episode, we cut through the hype and dive into how these technologies are being applied to real world problems today. We hope that you find this episode educational. and applicable to your industry and connect with us to learn more about our organization at AppliedAI. mn. Enjoy.
+
+[00:01:09] Justin Grammens: Welcome everyone to the Conversations on Applied AI podcast.
+
+I'm your host, Justin Grammons, and our guest today is someone I'm super thrilled to have on the show. His name is Nick Roseth. Nick is a visionary technologist positioned at the nexus of business technology and design. His 25 year career spans startups and Fortune 500 companies, where he has driven innovation and sustainable success.
+
+Nick leads efforts to harness emerging technologies such as spatial computing, which encompasses augmented and virtual reality, artificial intelligence, hardware, and SaaS. His work cuts across diverse industries, including healthcare, finance, and construction. And I would be remiss if I didn't mention that Nick is an influential public speaker and a staunch advocate for emerging technologies.
+
+He's done a TEDx talk on bringing tech jobs to rural America and was the creator of Documentary, a forum exploring tech entrepreneurship in Minnesota. And if that wasn't enough, he's the chapter president of VRARA Minneapolis as he continues to champion the integration of technology in community development.
+
+And he's someone I'm proud to call a good friend and truly an honest and kind soul. So thank you, Nick, so much for being on the Conversations Unapplied AI podcast
+
+[00:02:10] Nick Roseth: today. Awesome. Thanks, Justin. I'm really excited to be here. We always have so many wonderful discussions, so I have no doubt this will be as interesting as the rest.
+
+[00:02:20] Justin Grammens: Yeah, for sure. For sure. Lots of fun.
+
+Well, I gave a little bit of background, I guess, on maybe kind of what you're up to today, but maybe you could sort of fill in some of the blanks, I guess, kind of how you got to where you are over the past 10 years or so. What led you to where you are today?
+
+[00:02:33] Nick Roseth: Started my career in design. Just as the web was coming around. So I started in print design and then kind of made my way into web design. And then through web design, got into web development. This goes back to the old, uh, PHP days and building our own content management systems. And then eventually started moving more into the leadership and management.
+
+I was with a small digital agency for about 14 years. And then in about 2014. Left and went into the software testing side. So kind of got a very different view of the world from, from that angle. Did a couple of roles within that, including working on a, uh, kind of a startup that was within that. And then I did the film they mentioned documentary between 2014 and 16.
+
+And then I get an email one day from a guy out of California saying, Hey, I'm moving to Minneapolis and I'd love to grab coffee. So he brought his Microsoft HoloLens and he showed me my film on the, uh, wall of a spy house Northeast, showed me some of the stuff that he was doing. And so I was like, this is the future.
+
+So. Kind of fell in love with XR and then joined them to build a startup in using augmented reality in construction sites. So imagine walking into, you know, like right when they poured the concrete for the Viking stadium and there's nothing there, but you put on a Microsoft HoloLens and you can see where all of the.
+
+Mechanical, plumbing, framing, electrical is. And so that was kind of a crazy ride of a startup for a couple of years. And then COVID hit, kind of changed some things. When I joined that startup, I set out on my own as a consultant. And so I started Explore Design to help folks explore the latest in emerging tech and then build products with them.
+
+Did that with the one startup and then have also been involved and engaged with a couple of financial services companies in the emerging tech. So exploring. A lot around AI, conversational AI, prompt engineering, quantitative computing, and spatial computing as well. So I've continued to work with clients in that regard and then also have been in another startup for the last couple of years.
+
+We're focusing on mental health and TBI and PTSD populations. So we're building a VR based immersive art therapy platform to treat those or to research and help with some of the wellness aspects of TBI and PTSD. So been spending actually a lot of time. In the healthcare space, the last couple of years, which is kind of a very unique and interesting regulated industry.
+
+So maneuvering that, but also see tons of tons of applications in spatial computing and XR as well as AI. I think the healthcare space, so that kind of got one foot in AI, one foot in XR. One foot in financial services and one foot in healthcare. That's awesome.
+
+And it looks like you got
+
+four feet
+
+going.
+
+[00:05:30] Justin Grammens: Well, we're all, we're all keeping busy. I mean, when you talk about emerging tech, of course it just spans so many different things, right? I mean, it's such a broad term. It's not just AI or it's not just XR or it's not just quantum. And you're kind of living in all these immersive. Well, I guess all these emerging technologies, right.
+
+Bringing them all together.
+
+[00:05:47] Nick Roseth: Yeah. And I think, um, what's really interesting is the convergence of all of these, right? So. AI is fueling the XR industry because of what is, you know, some of the machine learning and onboard stuff like the Apple Vision Pro doesn't happen without a tremendous amount of AI.
+
+And so I think that, to me, the most interesting thing is this convergence of AR and AI coming together because you really have these, these XR devices as input. And then once you have data, then you can have the AI do something with that. So if nothing else, I mean, XR is fantastic content delivery, but it's also consumption tool, right?
+
+It's an input device into AI, whether it's local or cloud based. So I think that convergence, you know, to your, to your point is, you know, GPUs, right, GPUs would be another component to that. So you could say AR plus AI plus GPUs, right? This convergence of all of these things. And it really, to me. Is kind of moving us forward into this completely whole new epoch or era of humanity where we're really, really seeing so much more potential to expand on human capabilities.
+
+Yeah. Yeah. And I know you and I will get to some of that stuff for sure. Talk a little bit about some of the adoption and how it's going to change humanity. I know another thing you and I have talked about offline many times is it's just sort of the slow adoption that seems to be happening. Like you talked about HoloLens, you know, basically back.
+
+I don't even know, you know, eight years ago or what you were saying, you know, if you saw this thing, you were blown away or like, this is going to change the construction industry, you know, hands down. And I'm sure, and I'm sure you're seeing same thing in healthcare. You're like, this is going to completely like revolutionize healthcare, but yet it's just taking forever for things to kind of move forward.
+
+Yeah. I like to think of things in two cycles and there is a massive disconnect between how fast technology is evolving and how slow is being adopted. And so I think about, you know, some of like the, the adoption curve and what are some of the, the factors there, right? You've got, you got the adoption curve is kind of, it was created by a guy named Everett Rogers in a book on the fusion of innovations, right?
+
+And so you've got the innovators at the very beginning, the early adopters, laggards. And you think about something like Chat2BT or the Apple Vision Pro, where you're going to have these very early innovators that are going in and playing around with it, but it takes a very long time to actually reach the rest, you know, and Chat2BT has gone through that cycle incredibly fast, but the reality that that's, that's interesting to me is it's, it's actually a big, very much a human issue of people can be Blown away by an idea, but really not know what to do with it.
+
+And then it gets even more complicated because we've created these systems, these human based systems and societal constructs like regulatory bodies and healthcare, where even if you have something that is going to absolutely revolutionize healthcare, it still has to go through a very long drawn out process of actually getting into a marketplace where it can, can actually help people.
+
+Yes. So there's pretty much this, you know, this human side of. Emerging tech, AI, XR, that I've spent a lot more time recently thinking about is if tech is moving so fast. Why is it taking so long for us to actually adopt that and kind of the, the human side of things?
+
+[00:09:19] Justin Grammens: Absolutely. I did read about you talking about, um, the diffusion of innovations.
+
+There's another book called crossing the chasm. I don't know if you've seen that one at all. Yeah, yeah. Cause there's basically this chasm that happens, right? You've got all these early adopters that are playing around with this stuff. And then it's very hard to get across that. And I know, you know, you being an entrepreneur, you've built a couple of products on your own that it's so hard to get over that hump.
+
+And what's frustrating I think for us is that it can take a decade for technology to sort of cross that chasm for things to finally actually to finally move into the early majority and outside of the innovators and
+
+the early adopters.
+
+[00:09:57] Nick Roseth: And in the, in the Rogers book also, like, I'm trying to figure out why that is.
+
+Right. And, and I think that that crossing the chasm book does a great job of looking at that, but there's just a whole lot of factors. Rogers points out a few, like, what's the relative advantage, right? Is this like, it's the Steve jobs, 10 X thing, right? Right. It's not 10 times better. We're not going to build it.
+
+And then the compatibility of, you know, if you think about technology products, we think about the compatibility of integrating into tech platforms or APIs and that kind of stuff. But I think there's also the compatibility. Does this match my values? Does this match my experience? Right. If you try to talk through chat GPT, who's just completely.
+
+Abandon any hope of being a technical person. It's very difficult. So I'm a UX person. So starting in design UX is huge for me. And I think that that's where like complexity, where's the friction of adoption. And I think that's part of where that chasm comes in, right? Is what is the friction of not only how easy or difficult is it for me to use this product, but how easy or difficult is it going to be for me to get this right?
+
+Into my organization or through this regulatory body or to convince people to look at problems in a completely different way, like. And if, for example, self driving cars could make all the sense in the world, but at what point are people going to be like, all right, I totally trust this thing. It's good enough where I trust it.
+
+And even though I've driven myself for 45 years, I'm going to stop driving my own car. Like, so there's, there's all these kinds of points of how easy or difficult is it to approach this product from kind of the exploration. But then there's also the practical nature of how do I use it on an on a regular basis?
+
+I've seen that with Chachibuti a bunch where people are like, Oh, this is really cool, you know, for 10 minutes and then they never use it. They just don't understand how it's gonna actually optimize their time, make them more creative. So I think that there is. Something around kind of that human nature of new products, adoption, where's the friction and then how, how do we find ways through that?
+
+And so those two books, I think do great at breaking down, you know, for startups, how do you navigate those waters and deal with the inevitable challenges, right? There's a reason why 90 percent of startups fail. And there's a bunch of lessons in those books around that because finding product market fit.
+
+And then the adoption piece is always a challenge for, for pretty much anything.
+
+[00:12:31] Justin Grammens: Yeah. And you'd, you had showed me a chart here that was studied by PricewaterhouseCoopers survey, right? That basically said 62 percent of these surveyors have either never used ChatGPT or only use it once or twice in the past 12 months.
+
+Right. And that was, that was crazy to me. I mean, you know, actually the never percentage on this thing was like 37%. There's several people of people have actually haven't even touched this. You know, that means that I feel like a, we have a long way to go just to let people know about this tool that's out there.
+
+I feels like. The early days of the search engine, right? Like who wouldn't go on the internet and actually start using a search engine? Well, there were a hell of a lot of people in the late nineties that still didn't actually start using a search engine, right? They were like trying to type in domains and remember stuff.
+
+It's like, no, there's this thing called the search engine out there. It just takes a while. But then per that point, like it would, you were just talking about is, is fascinating, even if somebody has the tool and it's there in front of them, there's still another hurdle, right? That they need to hop over to basically say, how can I use this?
+
+And oftentimes I tell people are probably using chat GPT the wrong way. Right. They're so used to seeing a box and they think it's a search box. And so then they start asking ChatGPT questions that are more around searches, right, that are more, that would be more akin to going to a library and looking up reference material and don't really understand that ChatGPT is actually generating, it's actually generative AI on the backside of it.
+
+So. There's a different type of interface or different type of expectation I feel like when you're kind of using an agent like that than the old school way and people in some ways I think are approaching it the wrong way, but they obviously haven't been trained. It's just like this technology is just what did the market and people are on the point of like, well, let's just figure this out, which, you know, I would say it kind of has to happen.
+
+But. It can certainly, I guess, you know, cause people to not understand what they're doing and how to best use it.
+
+[00:14:15] Nick Roseth: Yeah, you bring up a couple of interesting points there. So the, the, the PWC study came out, I think this week, actually with the 37%. It actually matches. There was a, there was a study of news organizations that actually had very similar numbers.
+
+I think their, their number showed 9 percent daily users. So this one shows 12. And then I think there never was like 39%, but the, the thing that I deal with this in the XR space all the time, 80 percent of the population has no idea the XR products out there exist. It blows my mind. Cause I put a headset on somebody and they're always blown away if they've not used it.
+
+Yes. And it, I have to remember like this, this thing's like the hollow lens is like seven or eight years old. Like you said, right? Like this technology has been out there for a while, but it's not being, Adopted. And so you could look at the exact same way. Now, one of the things I've done with clients in the last year has been integrating, essentially plugging into private data.
+
+And so there's lots of different ways programmatically and now platforms like Azure and AWS to integrate chat GPT or cloud or whatever into these private data sets. And so there's what I'm sure you know, which is RAG. So retrieval augmented generation, which is a way to plug your private data set in.
+
+And the way I describe what I've seen in a couple of clients is that the first couple hours you're playing around with this thing is fantastic. And by, by You want to throw your laptop out the window because it doesn't do what you think it should be able to do. And this is again, coming back and looking at things from the human aspect side of this, like this is a pretty normal thing known as Amera's law, which is.
+
+Humans. And I think this quote is people talk about, um, Bill Gates saying it all the time, but that we overestimate what technology can do in the short term and underestimate its impact in the longterm. Right? So this is, there's these kinds of human laws that we typically do for whatever reason, but that's that two hours, nine hours thing where like, Oh, if it can do this.
+
+Then logically it should be able to do this and this, and this, and this, and this. But there's still limitations around rag and what it can find. So it will come, you'll, you'll give it some data sometimes, and it'll come back and say, I have no idea what you're talking about, which gets super frustrating.
+
+Right. And so people, people will shut down if that happens. And so this is trying to understand this gap between short term massive innovation and long term slow adoption. Has kind of led me down the rabbit hole of looking into what's called human factors psychology, which is the kind of the study of exactly what that is, which is why will some technologies work?
+
+Why will others not? What is the acceptance or the rejection? And then you can take that and totally apply it to AI. And with it, there's parallel fields of human computer interface research, right? Which is all of these devices. They're just ways for us to interact with data. And computers, and then there's like human robotic interaction.
+
+I think these two fields are going to be increasingly important because there's, you know, some factors within those of like, what are the things that are actually going to impact that? So trust being one of the first ones, right? If I set up a rag solution and I put data into it and even three out of 10 times, it comes back wrong.
+
+I have a trust problem. I can't fully trust it. And then a lot of people will, you know, throw the baby out with the bathwater and just not use it. And the same is true of XR, right? So we had the same problem in construction where we'd say, go in and say, hey, this is a revolutionary product. It's going to help you in all these different ways.
+
+And then they would say, well, if it doesn't have quarter inch accuracy at 10 feet, I'm not going to touch it. Same is true in healthcare, in surgical environments where you, you know, Microsoft HoloLens is being used heavily in surgical theaters. But they're looking for millimeter accuracy, right? Cause you literally have people's lives on the line.
+
+And so I think a lot of people struggle to adapt to a work in progress. Like you said, with cars, right? So they broke down all the time. We're talking about this earlier and, uh, cars break down. But the reality is innovation does not just become perfect overnight. Right? And so part of the thing, when I talk to companies about this, whether it's XR or AI, you have to build the muscle and the knowledge for how you're going to culturally adopt this.
+
+And that's the thing I worry about with, you know, this gap between innovation and adoption. Is that it's going to take a while to convince your people to use it or to show them how to use it, right? So like prompt engineering is another great one. You brought up prompt. The one thing I think that chat GPT did that was the reason why it was adopted initially so incredibly much is because it created this super easy to use interface.
+
+Which is the super advanced search and knows a lot of stuff. It gives it really confident answers, even when it's wrong. Yeah, yeah, right. But the reality is, for people to understand better how to use it, I think it still has this, this user experience problem. Because it shouldn't just be programmed to provide an answer, even if it has to make it up.
+
+I think that a much more smart intelligence is going to come back and say, it's going to start asking you questions. Right. So it might come back and say, well, what style do you want this written in? Right. Or, or who's the audience, right? So just like you're in business, if you're talking to an intern or you're talking to somebody, you ask them to do some work, you have to provide more information to me.
+
+I think these, these interfaces going from a single chop prompt is going to have to move towards more conversational if you really want to get the kind of You know, output out of it that you want. So that's part of the, again, I think the education piece of this final point on that I think is like Tim Cook from Apple said, augmented reality is an amazing technology and it's going to require a lot of education.
+
+So I think that, you know, the figures of 37%, 39 percent of people don't even use or never have used chat GPT. It means that all of these innovations are going to require a ton of education about what it does, how it does it, how you talk to it, how you use it. So that part of that, you know, that long climb, that slope up adoption.
+
+Is lack of awareness and lack of understanding. And so I think that for these innovations, that's just a long road, right? Which is why startups talk about survival. It's just sometimes it's just surviving that awareness and education curve. Yeah.
+
+[00:21:04] Justin Grammens: Yeah. I, yeah, I love what you were saying there around, um, it should come back and ask you questions, right?
+
+You're right right now. It's, it's going to give you an answer. Like it's going to give you an answer. The, the, the correct response in some cases is it depends, right? Like it should come back and say, it depends, I need more information. And so some of that is probably building the technology to be obviously better to do that.
+
+And we're gonna, it's just, like you said, it's just going to improve over time, but you know, dealing with it, like it's a human, humans are very complex, you know? And in one of the things that I saw you write recently, I mean, it was basically, I mean, that, that was the point was. We can't just solve this with one large language model.
+
+Like we're not going to figure out such a way that, Oh, okay. Chats GPT is going to answer all of our questions. Yeah. Maybe it did the Turing test. You know, maybe in a lot of ways it can fool people to that. But humans do so many things, so many complex actions that I still feel like in some ways we're still a long ways away from it.
+
+You talked about that book, I forget which one it was, but Coming Wave? No, no, no, no, uh, which we will, we will basically touch on that one. But he talked about the, the cortexual columns, uh, Jeff Hawkins book, The Thousand Brains Theory. I listened to that one quite some time ago, but I found it fascinating.
+
+[00:22:14] Nick Roseth: So if there's a book, you'll have to tell me what the name of the book is. I just Stumbled on that the other day, that, that concept of the, uh, thousand brains, cortical columns, the thousand brains theory of intelligence. And that part is, I'm getting more and more fascinated by that aspect of it because this year, and I think in the coming years, agentic AI is, we're absolutely moving into this era of agentic AI.
+
+And I think that means different things for different situations, but What I would see happening is that we're going to move from the single prompt response to, Hey, here's what I need. And then you're going to have some form of AI agent. That is going to either use itself or use other forms of AI to complete certain tasks.
+
+And right now you can use, there are AI agents where you can say, here's my objective is to make a, you know, a million dollars online. You probably heard or read the articles about this, right? So there's, there's papers coming out like every day. About how to change the way we work with technology in this context.
+
+And so it's, it's going to be this stacking of different forms of machine learning and AI that are going to make it easier and easier to use and more accessible. And I think that's one of the things that's been kind of a limiting factor is like, you know, series great and all, but not really until it really gets some better form of, Natural language processing and its ability to actually plug into.
+
+The rest of what I do. So Apple intelligence is a super interesting push forward, because I think part of the education is if you can't use a technology at work for whatever reason, and you don't have any ways to use it at home, how would you ever be aware or be educated on how this stuff works? But I see those as kind of parallel paths that hopefully with more integration and AI into our phones, where we're, where it's closest to us.
+
+We'll start to better understand how these systems work and maybe we can design more of these solutions because it's hard to design something when you don't even understand. And so that's where I think that we're at in this, you know, referring to the coming wave of like, all of this stuff is coming together at once.
+
+Along with some of this knowledge and experience. And now we're going to completely redesign our world now that we have these AI system.
+
+[00:24:49] Justin Grammens: Yeah. And it can be for good and it can be for bad. I want to talk a little bit about image generation, right. And video generation and sort of the deep fakes that are coming, but.
+
+You know, you talk about using a device and using something on a day to day basis. I was just talking with a guy, um, today, I went to play Pickleball yesterday for the first time, actually, and I didn't know the rules, right? And so me and my friend showed up and we got, we bought some Pickleball stuff off of Amazon, but we had no freaking idea how to play the game, right?
+
+So, so he is kind of on his phone, starting to Google around and stuff, and I just open up ChatGPT, right? And I'm using the voice interface. Which if you've watched any of the stuff when they released 4. 0, it's getting really good. I mean, I basically said, explain to me the rules at Pickleball. And the voice told me everything.
+
+And then I had follow up questions like, you're not supposed to step in the kitchen. Well, when should you? And when can you, right? And so we had this conversation back and forth. And meanwhile, you know, my friend is just kind of searching through Google links, right? Yeah. And clicking around and finding stuff.
+
+So I just decided to pull it out that day, right? It's just one of these things where now, but of course my brain needed to make that shift, right? I've needed to start shifting. And a lot of people aren't, but it could have been a human on the other side that was explaining and telling me to this. And it might have even been somebody that maybe I would have trusted.
+
+We've heard all these stories about, you know, CEOs getting duped and sending millions of dollars overseas and, and all that type of stuff. And what are, what are you seeing as you're starting to sort of explore around sort of these, these fake, these fakes and ways that it can be used in the wrong way?
+
+[00:26:12] Nick Roseth: Yeah, that, that piece I think is super interesting. So I've been doing a lot of research around the video generation. Yeah. I did a post, a LinkedIn post a couple of weeks ago where I created an AI avatar. And here again, like most of the world probably has no idea what I'm talking about because they're just not exposed to it.
+
+But AI avatars, what we call deep fakes, they're now calling AI avatars, right? So we've gone from this very derogatory term of people are using deep fakes to, you know, have one of the presidential candidates say something to now, what I'm seeing is that there are startups. Well funded and they are getting really, really good at these AI avatars where in two minutes I can take my phone and I can, I can talk into it just like we're doing right now.
+
+Like we could probably take this video of me, upload it to one of these platforms and it will have created an AI avatar of me and now I can make it say anything I want. And from a business perspective, you know, I totally see the value in this. If I, as a consultant said, all right, I'm going to do something and I'm going to create a whole course of content, I can now generate an entire video program of 30 hours without worrying about lighting want, right.
+
+Or my sound recording. So there's a ton of value, I think, in a lot of different ways, but. We're getting to the point where we can't tell if it's real or not. Right. Right. So I think that it's going to change how our human based systems operate. Because what I see changing is the concept of trust, right?
+
+And this has been around for a while, where you can't tell if that Facebook post about a presidential candidate is real or if somebody in Russia making it up, right? So I think that these technologies are both being used for good, but also bad, and it's changing our trust factor. And this is where I think, like, AI watermarks are going to increasingly become a necessary evil or necessary thing, because we just literally won't know.
+
+If this is, if this is generated AI, or if this is an actual person, and I think that there's multiple layers to that, right? So if we say two factor authentication is a retinal scan or a picture or an audio voice, right? So audio replication of voices is getting as good, you can't tell. So if your two factor authentication is as complex as, uh, voice recognition, 2FA is gone, in the age of Y.
+
+So it's changing security, cybersecurity, you know, completely, but also at a human level, is, I want to know that I'm talking to the real Justin Grammons right now, not a reference bot, right? So I think that there's this trust in human connection that we could potentially lose The more these AI systems get better is they're just fundamentally going to change all these conversations.
+
+I think moving forward, the same is true of generative AI in copyright. Well, how massively are things changing in what is the concept of ownership, sort of philosophical level. I loved my philosophy class when I was in school long ago, but you know, John Locke talking about what the concept of ownership is in that you find the land The land is there and then you put the work into the land and then it becomes yours.
+
+And that has based his along with some others have created the basis of modern ownership laws. But we're fundamentally coming into a. New era, because when I go create a book with Chet Chibuti, I can spark the idea with the question, but if Chet Chibuti wrote the entire thing, should I own that? And you're starting to see this stuff go through the courts.
+
+And I think eventually to the Supreme court with the New York times, lawsuits and every image generation company being sued. But again, this is all really testing the boundaries of this legal framework, this philosophical framework that we've had for a very long time, and I think that is just going to get more and more complicated, the more AI moves into all these additional parts of our lives through agents or through You know, just as it applies to different industries and, and, and even just our personal lives.
+
+[00:30:44] Justin Grammens: Yeah, that's crazy. It's crazy. Yeah, no, I, I saw the, some of those generation things you're talking about that. Hey, Jen, you know, I, I, I saw that a number of months ago actually. And the first thing that popped in my head as being a educator, right. Instructor is kind of what you said. I could basically generate my own videos for my students.
+
+And then you layer in chat GPT with that. And they could just ask questions of me and I could respond based on, you know, the large language model. And I don't even need to work anymore. But then there's the other side of that. Then it's just like, well then what value do I bring as an educator anymore, right?
+
+And so I started thinking about, you know, yeah, my job is at risk. And I kind of waffle back and forth a little bit on this, but I think everyone's job is at risk, right? I think this is going to force people to have to, I tell people, you just, you got to level up, man. I mean, you're going to have to get better at thinking.
+
+Well, the things that humans are still really good at, I feel like, you know, is broad concepts, plugging in, asking the right questions, of course, of these large language models, understanding where the relationships happen, human contact, you know, whatever it is, those are the things we're all going to get, you know, good at.
+
+But yeah, I can definitely see some of these things completely having some of the unintended consequences, right? I was reading this book recently on sort of the unintended consequences for girls in particular, but also boys that are adolescents with social media. Like, this has completely, completely changed the way kids grow up now these days, right?
+
+And you've got a young daughter, I have two young sons, and, you know, they're getting to that age where they want the cell phone, and they want the Facebook account, and Facebook sort of has 13 as their magic number, I guess, but this book is like, no, no, no, kids do not need to be on that stuff until they're probably 16, because, you know, just the fact of the information and the bullying that can happen and all that type of stuff.
+
+AI is going to be just like that. Like we don't even understand, you know, I mean, when, when Zuckerberg launched Facebook, it was totally benign in a lot of ways, right? It was just like, Oh, this is a simple thing for us to get to know each other. And now it's completely changed. And I feel like AI is going to do the same thing in the next decade.
+
+[00:32:42] Nick Roseth: Yeah. The unintended consequences like that. So guys like Elon Musk, they, you know, they have these big concerns about AI. They think a lot of really smart people. We know a lot about this and can see where it's going to go. I think that they are indeed concerned and I think they're right to be concerned.
+
+I think they're concerned maybe in some of the kind of species level events of AI. My more immediate concern is that we don't even necessarily understand what this is doing to us, right? So you, you, you mentioned Instagram for young girls and they've been up on You know, Capitol Hill to explain themselves and why girls are hurting themselves or killing themselves, like all these horrible things.
+
+And the, the scientists that are hired to create those platforms that understand dopamine triggers and that kind of stuff, and they know what they're doing and then know the negative consequences and effects of that. The rest of us don't understand that, right? Because it's human nature. You, you see that little red bubble.
+
+And I was thinking, I was talking to somebody about this recently, part of the reasons I think why phones are so popular, it just have absolutely exploded in terms of popularity and usage is because it makes us feel important because we think somebody wants to get ahold of us, whether it's on a phone or on social media or an email.
+
+And so it is this. It's this reward loop. Yes. If I pick it up and I check it, then that means I'm important because somebody sent me an email and wants to know something from me or wants to reach out and say hi. And so you start getting again, back into this, the humanity of the psychological ramifications of these technologies, and you start to look and say, all right, well, this is why we do it, and this is maybe some of the, the downside.
+
+And I think we don't even necessarily know what some of the impacts of AI are happening, right? Like you just said that you could create an AI course and could do all this work for you. But you just also said, what good am I? Have you ever read, uh, Man's Search for Meaning by Viktor Frankl? Yes. Yes. That's a phenomenal book.
+
+But my concern, like if we automate and, and use AI to, you know, replace 30 percent of the work that's being done out there, what are we going to do? How do I create, um, pride for myself or what is my purpose to, you know, be on the planet? And so those kinds of psychological components of, wow, I can save myself a ton of time, but you don't, you only do have to do half the work.
+
+What are the potential psychological impact of that on your well being? Without even knowing whatsoever. So those are kind of the, the interesting things I think about AI is that it's fundamentally going to, it is fundamentally already shifting us in a way like social media has, but we might not even understand what that looks like big picture for 10 years.
+
+[00:35:45] Justin Grammens: Yep. Yep, exactly. And we'll wake up one day and all of a sudden, bam, it'll be. It'll be here. Right. Right. And especially for most of the population, it's going to be a huge shock to the system when all this stuff happens. We talked a little bit about the coming wave, right? And so part of the things that I do typically here is, is yeah, what are some interesting books you're reading, you know?
+
+And so the coming wave by Mustafa Suleiman, I mean, that's a, that's a fascinating book. You mentioned one is you and I were sort of kind of going back and forth. Is this co intelligence? I, I had not, I was not familiar with that book. Is that something that? Yeah. You've been reading recently,
+
+[00:36:16] Nick Roseth: I haven't, I haven't read it yet.
+
+Do you know Ethan Mollick? No, I don't. I don't. But yeah, so find him on LinkedIn and follow him. I can't remember exactly. I'll try to look it up on LinkedIn where he is an educator that might be Stanford associate professor at Wharton school. So he he's got 135, 000 followers. But he posts on AI and he's, I would say he's one of the smartest guys posting stuff on LinkedIn.
+
+I see stuff from him all the time. So he wrote a book on co intelligence and I think I'm excited to read it because I think that's the path forward, right? Is that we're not, AI is not replacing us entirely. But that we're going to learn how to work with, and we're going to kind of have this co intelligence.
+
+So I use Chad GPT. I'm, I'm pretty much coming up on a daily user of Chad GPT for all, all sorts of things. And it starts to kind of feel like that, like that co intelligence that I'm still doing the direction I'm coming up with a lot of the ideas, but sometimes it comes up with the ideas. And so it, it really becomes this companion on whatever it is that I want to work on.
+
+So like, I've been wanting to write a book for many years, like having chat GPT or something makes that way more plausible, right. For me to be able to generate. Content. Otherwise I just don't have the time. So I'm, I'm interested in reading this book on co intelligence just in that it really is a way to kind of power, you know, to give us some, some super skills.
+
+To a certain extent, again, that comes down to education, right? How could I use this? The general population has no idea that, that you should probably have, uh, a conversation with the AI to get the best answer, that it's not just a one and done. It's that you ask it a question, it comes back with an answer.
+
+And you're 30 percent of the way there. And then you go back and ask it and say, okay, let's refine that. Let's ask deeper questions. But again, I think it comes down to education and also these interfaces. Like I really would like to see when I, just like if I was talking to somebody at work and I say, Hey, I need you to do something and they're like, okay, well, I need more information.
+
+A Dura ticket and give me all the requirements. We kind of have to do the same thing, whether we're talking to a person or whether we're talking to AI. And I think that's going to be one of those. Things that people have to learn along the way, which is these are not new problems. Like people are bad at giving requirements to anybody.
+
+[00:38:44] Justin Grammens: Yeah. Yeah. Humans aren't, aren't perfect either. Right. Most of us are pretty bad at giving full direction to a human. We're probably going to suck at it, giving it to an AI bot, but I think it's, it's part of that education curve.
+
+Yeah. Yeah, for sure. Are there other books you'd recommend or conferences you would suggest going to, or other things you're seeing on the horizon that are interesting groups to sort of hook up with?
+
+Well, the applied AI conference. All right. There we go. We got to put that in
+
+there.
+
+[00:39:09] Nick Roseth: I was pretty excited about data tech. There was some great talks there. I know, I know you gave a talk there. I, I definitely learned a ton at that. And, you know, many analytics is doing a great job. I wish I knew more national or global AI conferences.
+
+Cause I think. The more I, the more time I've been spending getting on planes and going to conferences that pull lots of people together, the more I see that convergence of all those ideas and different, you know, bright people from all over the place. So I've been getting more into those, like I said, Ethan Malik is one and I'll have to think about any other maybe blogs or resources.
+
+I just try to follow lots of people on LinkedIn because that's where I'm most active. And then I think that, you know, newsletters, there's a bunch that I've signed up for, probably don't read half of them, but it changes so much. And, you know, I think that the, one of the areas I've learned the most probably is just through published papers on the Cornell website.
+
+Ah, okay. Right. The ARCS IV.
+
+[00:40:06] Justin Grammens: Oh yeah. Yeah. There's tons of stuff out there. You're right. That's just.
+
+[00:40:09] Nick Roseth: I mean, if you really want to get as close to the bleeding edge as possible, you know, the ARCS IV Cornell university website is where the. Smartest people on the planet are publishing their work.
+
+[00:40:21] Justin Grammens: Yeah, totally.
+
+Totally. I, I 100 percent agree. And a lot of that stuff is just, yeah, they're, they're very much in the R& D phase, right? They're just, it's not even commercially viable stuff, but they're pushing the boundaries and you know, we were talking before this. Uh, before we started recording, I went to this Midwest Machine Learning Summit event that was happening, happening at the University of Minnesota.
+
+And I'd even heard about it. I was just like, what, what's this thing all about? And through a contact, he's like, if you're in machine learning, you actually really want to attend this. And I went there and I was just blown away because it was, it was all about P it was, it was PhDs that were basically working on some really, really interesting dissertations and research projects.
+
+That are just like, no one's heard about this stuff yet, but I'm just completely excited. Like I left there overwhelmed by what's like, Oh my God, just wait till this hits the industry. Things are going to be changing so fast. So awesome resources, Nick. That's, that's really, really good. The Cornell, the Cornell one.
+
+And the other, when it comes to newsletters, I, somebody put me onto this neuron. It's the neuron daily. It's pretty good. It's a, it's a pretty good one that comes out because you're right. Stuff changes every day. And, you know, I even run our, my, the Applied AI Weekly newsletter. And I have a tough time just trying to figure out what it's basically curated, you know, information that I pulled that I pulled together.
+
+But at the end of the week, I've got like 50 things and I want to narrow it down to like 10 max, you know, so the, the neuron AI newsletter is pretty good. So
+
+[00:41:40] Nick Roseth: there's a TLDR newsletter on AI. That's another one I've seen. Medium is another good one. A lot of people look for really good stuff on medium. So I think it's just a matter of finding it.
+
+One thing I will say, I've noticed people are really busy working on this stuff. They're not great at talking about it. So sometimes it can be really hard to find what people are doing, right? That was the whole thing. I reasoned why I did documentary, like, why isn't anybody talking about that? So I think it's just, you have to kind of look for these pockets and then curates, you know, kind of brutally because.
+
+Once you start turning the feeds on, like some of these emails I get, like, I probably get 10 emails a day on AI and it's, it's impossible to read all of it. So you just have to be very selective, um, about who you follow, who's publishing that stuff. That's why I like, you know, this Ethan Mollick and some of the stuff that he's doing, because he is, he's pretty broad in what he talks about and he posts constantly and I trust the content that's coming out of him.
+
+So that would be another piece of advice is just find like three or four. Really prolific contact curators of that are pulling together all of the latest stuff. That are doing that really early stage exploration and experimentation that is going to help you understand what's coming down the pipe.
+
+[00:42:58] Justin Grammens: Yeah, for sure.
+
+Yeah. And we will put links to all this stuff in the liner notes for the podcast. Before I have you give out your information with regards to how people can reach you and connect with you, Nick, I mean, is there any other things that maybe you wanted to talk about that we didn't, didn't highlight? I know we, we went around a lot of different things, but.
+
+I always sort of open it up and say, Hey, was there something else that you wanted to make sure we highlighted or emphasize that would be great.
+
+[00:43:21] Nick Roseth: You know, I think kind of building on this human side of AI, the more time I spend in this, the more I see that these machine learning algorithms, if you tune and build an algorithm the right way, and you just point it at some data, it can get trained on and seem to get fairly decent on.
+
+On like more and more use cases, like anything that's repeatable or anywhere you're looking for a pattern. And then I just look at all these areas of life. That are like, that would be cool to have a, an algorithm that could do that. And so one interesting thing, have you seen the movie Atlas? It's on Netflix right now.
+
+It's super interesting. Jennifer Lopez, without spoiling it, it's basically about the relationship with AI, right? She, she doesn't trust AI. And then by the end of the movie, she has to trust it with her life. What, what's interesting about that is I've been kind of thinking about, I'm reading this book on consciousness and, you know, people talk about sentience and AI.
+
+I was I think it's actually a super complex topic. And the point there, I guess, is that humans are really, really, really complicated. We have, you know, all of these different parts that the conscious and the unconscious things that make our heart beat and all of these kind of things we can't even see.
+
+But it's gotten me thinking that if you take enough of these algorithms and you plug them together and you give them kind of these distinct responsibilities, You know, what is the path towards AGI? There's definitely companies that are working on it, but the more you start thinking about how the human body, the, you know, the physiology or central nervous system and all these things, you could theoretically say, all right, well, we can train something.
+
+If we give it enough data, it can learn to do that one part. So like we were talking earlier with AI agents. I would anticipate that there's a bunch of companies that are looking at this from the perspective of like, let's treat AI like a baby and let's feed it all of the data that we put somebody through in the course of their life.
+
+And it will start to actually grow at least a fake empathy for what humans have to deal with, right? Like AI doesn't know what pain is. I think one of the big researchers out of Google said, I got really freaked out when I went to turn this thing off and it said, like, I'll die. Yeah, exactly. Yeah. That movie Atlas really got me thinking because.
+
+It's, it's AGI, right? And it's personalized AGI, right? So concept is it thinks with your, your brain and kind of this idea of co intelligence. But really like physiologically wired in. And so like that coming wave book talks about not just the coming wave of AI, but also like bioengineering. And, you know, we're, we're kind of, we're definitely playing with fire when it comes to this stuff.
+
+But you can start to kind of see that there is a fundamental shift. We are moving into this age or this era of AI powered everything to a certain extent. And I would anticipate that. It will just continue to plug different machine learning algorithms or different AI systems together. We'll automate more and more of these pieces and it's just a fascinating time to be alive in that.
+
+From an ethical perspective, we need to be really cautious about the conversations that are happening, right? Because I mentioned the unintended consequences, the things that we're not even aware of, right? Both personally and at a, at a higher societal level of what, what the ramifications of these decisions are.
+
+And we're obviously in an arms race and in a massive AI hype cycle, right? So that'll, that'll come back down. But I think that the. The coming wave does a really good job of illustrating the point of how massive of an impact AI is going to have. It's like, you know, discovery of fire or the industrial revolution because it completely changes the playing field.
+
+And so that I think is, it's just a fascinating thing that people probably don't fully appreciate. And some are scared of, but I think we're, we're moving into this new era. We need to have the important conversations about how are we going to do this appropriately so that we're, we're retaining our humanity alongside, um, this amazing technology.
+
+[00:47:24] Justin Grammens: Oh man. Well said. That was great. You know, you talk about taking a baby and, you know, training it all the way through. I think, you know, the breakthroughs that we've seen with regards to training an algorithm on how to play chess, for example, or how to play go like. They're not, they're not even telling it the rules anymore.
+
+You know, they're basically saying just try and win and then it plays against itself. Right. And that's how it ends up building this up. And I think the thing in my head is you're saying that I was like, well, if we've done it with these games, right. And somebody did it back with Pong back in the seventies.
+
+In fact, and maybe it was mentioned in that book in, in the coming wave, but that was a breakthrough for them. They were like, Oh my God, like we can train a machine to actually. And the, the thing was, you know, kind of like, kind of like round this out was it figured out how to put the pong ball behind the blocks and have it go ding, ding, ding, ding, ding, ding, ding.
+
+It wasn't like it just knew how to hit the ball. It actually created on its own, it figured out, oh, if I do X, Y, and Z, this is the most efficient way for me to knock out all the blocks. And so it was like a, it was like, I forget who was working on that early, early system, but it, it, they were just like, oh my gosh, you know, this thing can start actually figuring out how to optimize stuff.
+
+And if we've been able to do it with games. I think kind of what you're getting at is we can do it. I mean, it's, again, it's just an incremental step, but at some point we'll be able to do it with emotions. Right. And we'll be able to do it with, with motor skills. Right. And pretty soon we're at the point where these robots are not only talking and, and rationalizing and, and showing emotions, but now they're walking and doing all sorts of stuff, which is crazy.
+
+[00:48:49] Nick Roseth: Well, like AlphaGo move 37, right? Like out of the trillions of options, they came up with something that no human had ever thought of. And I think that Part of the big thing is, you know, you talk about like the amount of power, like the GPU is, and part of the, the Mustafa's point in the coming wave is like, we're hitting the limits of physics as to how small we're making transistors, but we can just chain a bunch of them together.
+
+Right. And so the number of data centers that are going in, what's happening with NVIDIA, um, we're continuing to. Build that engine bigger and bigger and bigger. We're training more and more of these algorithms and it's going to do some things that we're not anticipating it would ever do, right? Because we're programming it to explore beyond what humans are even capable of.
+
+So it's just a, such an interesting thing to kind of keep watch of, of all of these different. Emerging technologies. I mean, think about the power of quantum computing is absolutely something we can't even fully understand. But if you plug quantum someday into AI machine learning, it's pretty powerful. So it's fascinating stuff.
+
+[00:49:51] Justin Grammens: Cool. Well, how do people get ahold of you, Nick? What's the best way?
+
+[00:49:54] Nick Roseth: Pretty active on LinkedIn. So definitely connect on LinkedIn. Love having these types of conversations. You can email me at nick at explore. design. Check out my website at explore. design and yeah, and LinkedIn. Happy to chat. Awesome.
+
+[00:50:08] Justin Grammens: Awesome. Cool. And I'm sure you'll be speaking at future conferences and events and stuff like that coming up. I know you spoke at, you've spoken at Applied AI a couple of times. And I'm sure we'll
+
+[00:50:17] Nick Roseth: definitely wanting to line up some of the events this fall for sure. Yeah, cool.
+
+[00:50:21] Justin Grammens: Well, great. I appreciate you taking the time today, Nick.
+
+[00:50:23] Nick Roseth: It's been great. I'll always a good conversation and be, I look forward to having you back in the future and seeing you out at future events.
+
+[00:50:30] AI Voice: You've listened to another episode of the conversations on applied AI podcast. We hope you are eager to learn more about applying artificial intelligence and deep learning within your organization.
+
+You can visit us at AppliedAI. mn to keep up to date on our events and connect with our amazing community. Please don't hesitate to reach out to Justin at AppliedAI. mn if you are interested in participating in a future episode, thank you for listening.

@@ -1,0 +1,267 @@
+[00:00:00] Kevin Liu: I think the funny part of it is that when people develop AI, people thought about using machine learning AI to replace the more mundane part of the job, right? And then we have the time to do the more creative side of the work, but currently it seems particularly all these generative AI, they are doing a better job in terms of all these kind of more creative tasks.
+
+Things like writing, drawing and music and all these kind of the on the other hand, you know, replacing the more mundane part of our daily job is it seems more challenging at this point.
+
+[00:00:33] AI Announcer: Welcome to the Conversations on Applied AI podcast where Justin Grammens and the team at Emerging Technologies North talk with experts in the fields of artificial intelligence.
+
+and deep learning. In each episode, we cut through the hype and dive into how these technologies are being applied to real world problems today. We hope that you find this episode educational and applicable to your industry and connect with us to learn more about our organization at AppliedAI. mn. Enjoy.
+
+[00:01:03] Justin Grammens: Welcome, everyone, to the Conversations on Applied AI podcast. I'm your host, Justin Gramis, and our guest today is Kevin Liu. Kevin is an associate professor in the Department of Electrical and Computer Engineering at The Ohio State University and an Amazon visiting academic with Amazon. com. From August 2017 to August 2020, he was an assistant professor in the Department of Computer Science at Iowa State University.
+
+He currently serves as a Managing Director of the NSF AI Institute for Future Edge Networks and Distinguished Intelligence at OSU. He received his PhD degree from the Department of Electrical and Computer Engineering at Virginia Tech in 2010. And among many awards, he was an NSF Career Award recipient and a winner of the Google Faculty Research Award in 2020.
+
+Kevin helped to organize one of the most fascinating conferences I've attended on machine learning. It was the Midwest Machine Learning Symposium at the University of Minnesota. And, uh, thank you, Kevin, for all the work that you do. I'm thrilled to have you on the Conversations on Applied AI podcast today.
+
+[00:02:00] Kevin Liu: Yeah, thanks for the nice introduction, Justin. Yeah, thanks for having me.
+
+[00:02:04] Justin Grammens: Awesome. Your LinkedIn profile has way too many awards and accolades for me to call out, which is fabulous, but I guess, you know, my first question to you is, obviously you have a lot of experience in machine learning and academia.
+
+Was this something you knew that you wanted to do from such a young age?
+
+[00:02:18] Kevin Liu: Actually, not, not necessarily. Instead of like the long self intro, you, you just, I can give you like a more personal and more detailed self intro. Cool. Yeah, I actually grew up in a city in Southern China called Guangzhou, which is widely regarded as the third largest city in China and also pretty close to Hong Kong.
+
+So yeah, actually people there speak Cantonese. So my first language is Cantonese, although I'm also very fluent in Mandarin. I was born in an academic family. Both my parents are professors in the two biggest universities in the city. Yeah. My dad actually taught mathematics and my mom taught chemistry.
+
+Yeah. So growing up, I've always been fascinated with Excel and math and sciences. So I obtained my bachelor's degree and M. S. degree in China, both in electrical and computer engineering. So at that time, I wasn't very focused on AI and machine learning, but, you know, I just developed my skills and acquired my knowledge in general areas in electrical and computer engineering.
+
+After I graduated, I worked for Bell Labs China for about 2. 5 years in Beijing, which is the capital of China. And then it was during this period that I found my, my real interest and passion, buying more academic research rather than industry R& D. And this motivated me to apply grad school in US to pursue my PhD degree.
+
+And then I, like you just read, I eventually received my PhD in ECE from Virginia Tech in 2010. During my PhD years, my research was focused on not AI and machine learning, but on various networking research areas. And then, yeah, actually at the time we called it cross layer optimization, mostly for wireless networking systems.
+
+With all these kind of advanced physical layer technologies, many of which continue to play a major role in the current 5G wireless communication system today. It's kind of a multi antenna system. Which is also known as MIMO, uh, if you have a Wi Fi router in your home, you'll probably see this kind of technical jargons.
+
+And then after obtaining my PhD degree from Virginia Tech, I joined Ohio State. Initially as a postdoc researcher and later being promoted to a research assistant professor. In those years, my research areas branched out to more diverse areas, but still not on ML and AI. So my research branched out to other related fields in all these kind of stochastic network optimization, including optimization and control for big data analytics infrastructure, cloud computing systems, internet of things.
+
+And even some smart power grid research at one point. And then after several years of professional preparation at OSU, in 2017, I moved to Iowa State and started my tenure track assistant professor position in the computer science department. And it was during this time that I made the strategic move from being a pure Research to conducting research in machine learning and AI in my tenure track period.
+
+So this is significantly motivated by this milestone and breakthrough event in AI in the, uh, 2016 to 2017 period. So if you remember during those two years, this famous Alpha goal AI computer program developed by Google DeepMind. beat two human champions of the board game Go. One is the Lee Sedol from Korea and the other one is Ke Jie from China.
+
+In fact, the latter was actually the number one ranked player in the world at the time. So this is pretty significant. So I thought to myself, well, machine learning and AI will definitely be the next big thing for years to come. And then I decided to make this move. But of course, machine learning and AI is such a broad field.
+
+I cannot possibly work on all topics in this field, so based on my background, I decided to work on the niche areas sitting between AI and networking, two of the most foundational and transformative IT technologies in our modern society. So in this area, I worked on many different topics, including federated learning, decentralized learning, multi agent online sequential decision making.
+
+Including so called multi armed bandit problems, reinforcement learning problems, as well as many security and privacy problems associated with all these areas. And I continue to work on all these areas to this day. And then in 2020, during the thick of the pandemic, I moved back to Columbus and continued my tenure track assistant professor position at OSU in the Department of Electrical and Computer Engineering.
+
+And I also just recently got promoted to associate professor at OSU just a few weeks ago. And that's all my more personal self intro. And I would like to elaborate more on all the research areas that I just mentioned.
+
+[00:07:03] Justin Grammens: Yeah, no, no, this is fascinating. My background, the way that I kind of got into machine learning and AI, is in the Internet of Things.
+
+I actually started a company about More than 15 years ago, I mean, before IOT was really called IOT, you know, it was this idea of just remote configuration, you know, remote data acquisition, M2M, right? There were just a lot of these terms that were out there.
+
+[00:07:24] Kevin Liu: Yeah, there's another popular term called cyber physical systems.
+
+If you write proposal papers to NSF, you know, you have some type people. Yeah,
+
+[00:07:34] Justin Grammens: and so I started working with companies and we started collecting a lot of data with sensors and stuff. And I actually teach at a local university here. I'm an adjunct professor in their master's in data science program, but I realized that it's too much data for any human to ever comprehend and go over.
+
+And that's what kind of drove me with regards to like machine learning and being able to essentially take a bunch of data and let the machine figure out where all the correlations are. Sounds like you've done that in a lot of different areas. Yeah. I guess pick your own topic, whatever you want to talk about, Kevin, but like, where are you seeing the most interesting sort of fun areas?
+
+And even in some ways, are you seeing it applied to large language models? Like those seem to be kind of the cool thing these days. Everyone's sort of talking about LLAs. Yeah, yeah,
+
+[00:08:12] Kevin Liu: right. Okay, so I can elaborate a little bit more on those research topics that I just mentioned. Yeah, I just mentioned that I worked on all these kind of niche areas sitting between machine learning, AI, and networking.
+
+So basically all I'm doing currently. It's on distributed learning, which includes several popular paradigms. One is called federated learning. Federated learning is an important and popular distributed learning framework that leverages all the basic needs of parallelism in a computing system. Also, distributed learning itself is also one of the main driving forces of the success of ML and AI in recent years.
+
+Now, coming back to federated learning, in a typical FL system, there are a set of client devices coordinated by a friend server. And each client possesses a local and private data set. So that's the basic setup of federated learning system. And in fact, data privacy is one of the main motivations of using federated learning these days.
+
+And the key goal in FL is to leverage the massive parallelism in a system to increase the computation efficiency while trying to mitigate the potentially high communication and data inefficiency cost due to the data and system heterogeneity issues in such a distributed computing system. An FL system is typically deployed over the wireless edge networks.
+
+Yeah. One classic example in federal learning is the Google G board, which is the smart keyboard on all these Android smartphone devices.
+
+[00:09:42] Justin Grammens: Yeah.
+
+[00:09:43] Kevin Liu: So basically when you type something, right, you can see the smart keyboard will do something. Simple nest for prediction. And actually behind the scene, there's a, like a small language model.
+
+Definitely not a large language model. There's some small language model that is trying to learn from your typing habits and things like that, right? So to train this model, basically federal learning has been used to facilitate all these kinds of distributed learning. while protecting your data privacy.
+
+So this is one, one area that I have invested a lot of time, uh, in recent years. And then I also mentioned decentralized learning and multi agent reinforcement learning. Decentralized learning can be viewed as, like, one step further from federated learning. In federated learning, there is still a server that coordinates all the computation and communication with all these distributed learning devices in a system.
+
+But in decentralized learning systems, there may not be such a server. This kind of scenarios. naturally arrives in like autonomous driving or UAV networks, or even satellite network, where you try to leverage all these networking systems to perform distributed learning. So to address these challenges, we basically need to develop new algorithmic techniques.
+
+such as some kind of consensus based decentralized learning algorithms. But the key challenge here is how to develop fast, converging, and efficient algorithms in the process of all these noises, errors, or uncertainties due to the decentralization structure of the system. And third, if the learning objective functions, basically the learning loss functions, are known, then we may need to further consider reinforcement learning type of algorithms.
+
+Which will lead to this multi agent reinforcement learning problems, which is even harder problems to solve. Some use cases of this kind of decentralized learning include how to optimize all these wireless random access networks based on multi agent reinforcement learning techniques. So in fact, these topics are coming from some of my own research projects funded by NSF.
+
+And also the industry.
+
+[00:11:38] Justin Grammens: That's, that's fascinating. So as you're speaking about this and we'll focus on the keyboard example first. I mean, you're trying to train a language model on something that is low power pretty much. Right. And so are you looking at, I mean, I think Google Gemini has their, what they had a, like a light version or something like that, or some sort of a, I forget how they term it, like a mini model, but.
+
+Mean are, are you looking at how to optimize this and sort of how to train these, uh, at the edge on like the powered devices?
+
+[00:12:08] Kevin Liu: Yeah, of course. In all machine learning paradigm, there is a training phase and also an inference phase. So yeah, we, we looked at, uh, both phases. So all the stuff that I just mentioned is more related to the training side of it.
+
+Yeah. Like you said, in fact, these kind of small language models that can fit to all these kind of computation or power or computation, limited edge devices. It's getting more and more popular these days. So in addition to these global models you just mentioned, recently, you know, there's some big events at Apple announcing their Apple Intelligence.
+
+Yes. So, yeah, if you look at their announcement, you'll be amazed that, you know, they never mentioned a single word of Federal Learning. But I know my colleagues working at Apple and I know behind the scene, all they are doing is basically federated learning.
+
+[00:12:57] Justin Grammens: Interesting.
+
+[00:12:57] Kevin Liu: Yeah. And same thing as in Microsoft, they also recently announced another model called 5.
+
+3, which is also like a small language model on the scale of a couple of billions of parameters. Of course, it's not that small. I mean, compared to classical deep learning models, but it's much smaller than the. Yeah, hundreds of billions of parameters up there.
+
+[00:13:21] Justin Grammens: And, you know, I love the idea of training this stuff and kind of using small devices to do it because ultimately, like you said, you got security built in, right?
+
+You don't need to send all of this stuff over the internet to some massive centralized hub. Everyone else is sort of training it on their own locally, right?
+
+[00:13:38] Kevin Liu: Yeah.
+
+[00:13:39] Justin Grammens: And then when you talk about decentralized, there's no server at all. Is there the capability of, I mean, some of these things need to, I would guess somewhat synchronized.
+
+Are you guys looking at blockchain or other technologies to plug into this or does that not really apply here?
+
+[00:13:51] Kevin Liu: No, no, no. At least for now, we have not been thinking blockchain at this point. Maybe in the future that there. There might be some potential, but yeah, there's some similarity in the terminologies.
+
+We talked about consensus and all things like that, but they are not that related. So mathematically, we are just trying to solve an optimization problem associated with the decentralized learning problem where you impose. Uh, some, you know, what we call consensus constraint. So basically, yeah, roughly speaking, the constraint just means that, uh, the models at no i should be equal to the model at no j after certain iteration, something like that.
+
+Yeah, of course, we, we need to look at the mathematical formulation to be more precise, but roughly speaking, that's the consensus we're talking about.
+
+[00:14:36] Justin Grammens: Fabulous. Well, it must be fun to be working on stuff so early on. And then, like you said, you know, these announcements come out maybe years later, I guess.
+
+And you're like, Hey, I worked on some of the initial research that, uh, went into that stuff. So what does a day look like for you? You know, as a person that's an academic researcher in this space, I'm just curious because my follow up question is going to be how do people get into this? But what, what does a typical day look like for you?
+
+[00:14:59] Kevin Liu: Yeah. As a professor, you know, a typical day in my life include multiple roles. So all these roles. can roughly be categorized into research, teaching, and professional services. And also these are all the evaluation criteria for us when it comes to promotion and tenure in university. The biggest part of my daily life is research, obviously, which includes reading academic papers to keep up with the state of the art in the field.
+
+And also get some inspiration of what problem to solve coming up. And I also need to have a lot of meetings with students and postdocs to work on solving specific research problems, which will lead to obviously publications and also application for funding down the road. Okay, so that's the biggest part, which is research.
+
+And the second biggest part of my daily life is teaching and student mentoring. So yeah, I think the most unique part of a professor compared to other highly educated and trained professionals in the same field. It's that we need to teach in order to get paid. Just, uh, obviously, but yeah, just, this is just joking, but I think that one must enjoy teaching in this job.
+
+Otherwise this job will be really difficult because you're constantly working with hundreds of students. If you would teach an undergrad class that involves a lot of management besides just lecturing. So yeah, that's a lot of work. Also, I think being a professor, you know, major research university, one of the most important parts of my job is to.
+
+Mentor graduate students for future workforce development in our research area, including nurturing the future professors and research scientists are in our industry. So this is the 2nd biggest part and the 3rd biggest part for my daily life is to serve our research community. And the typical activities include reviewing papers or conferences and journals in our field, surveying various organization committees or conferences and journals in our area, including the MMLS conference you just mentioned.
+
+And yeah, these are very typical, but for me, a very unique role compared to my other colleagues is that I'm currently serving as the managing director of this NSF AI Institute for Future Edge Networks and Distributed Intelligence. called the AI Edge Institute for short. So this is a 20 million institute funded by NSF and led by OSU, focusing on AI for networking systems.
+
+So in this role, I need to do a lot of management and coordinating work in research, education, and workforce development, broader participation in computing, and also outreach to professional communities. It involved 28 faculty investigators across 11 universities, leading research universities, And also we have 12 industry researchers, collaborators in seven leading companies and DOD research labs, and also nine researchers from five international universities in India and Korea.
+
+So it's a job that's quite demanding, but I also have a lot of fun in this role.
+
+[00:18:06] Justin Grammens: I'm curious about the AI Edge Institute. How does someone get involved in that? I mean, so you guys built this grant that NSF funded. If I'm a researcher or I'm a graduate student or postdoc, do I apply to get into this or do you ask people to get in?
+
+I'm just kind of fascinated on how this process works.
+
+[00:18:21] Kevin Liu: Oh, okay. So initially we just like some other NSF programs. And so NSF hosts this funding opportunity announcement. Yeah. Obviously this, this one is way, way bigger than a regular NSF program. Then, you know, Someone will obviously have some vision and then he or she will form a team.
+
+In our case, our institute director is Professor Nashaw. So he basically organized a team of collaborators in academia, in industry, in DODs and all these people. And then, yeah, basically we form a team. We discuss how to approach this program and how to come up with the competitive proposal. And then we submit the proposal.
+
+And then, of course, there will be a lot of competition and eventually we're fortunate to get this award. Now, after that, basically, after we receive the funding, so during the grant writing process, we already have some students and postdocs who might be participating in this project in mind. So now, of course, after the project is funded, then we will definitely put those students into the effort.
+
+But, you know, students are student postdocs come and go. So we, we also need to think about how to continuously recruit new students and postdocs to participate in this project.
+
+[00:19:36] Justin Grammens: So this is many years, you said for this project?
+
+[00:19:39] Kevin Liu: Yeah. The first phase is five years after five years. Yeah. We'll see whether we will have the opportunity to renew this program.
+
+[00:19:46] Justin Grammens: Gotcha.
+
+[00:19:47] Kevin Liu: We're still working on that.
+
+[00:19:48] Justin Grammens: Yeah. You guys kind of formed the team ahead of time when you submitted it. They obviously took a look at all of the people that were going to be working on this, and that was based on that. And that obviously made them feel a little more confident in giving the grant money to you guys.
+
+You know, the other thing that I was thinking about is, you know, some, I ask a fair amount of people on the program is how do you think that all this AI is going to kind of affect the future of work? Are you concerned about your job, you know, in the next five to 10 years, all this research, I mean, can AI do research on itself, you know, in some ways, or what are you seeing, I guess, out there that might, you think maybe might impact a professor or the stuff that you do in the next generation, for example.
+
+[00:20:22] Kevin Liu: Yeah, this is a hard question. I also don't have the crystal ball to predict, but I'd say maybe I'm a bit Leaning toward the optimistic side of it. So I think that definitely there will be a lot of jobs that will be replaced by ai. I think the funny part of it is that when people develop ai, people thought about using machine learning AI to replace the more mundane part of the job, right?
+
+So we have the time to do the more creative side of the work. But currently it seems, you know, particularly all these generative ai. Doing a better job in terms of all these kind of more creative things like writing, drawing, and music.
+
+[00:21:02] Justin Grammens: Agreed.
+
+[00:21:03] Kevin Liu: And on the other hand, it's, you know, replacing the more mundane part of our daily job.
+
+It seems more challenging at this point. But I'm still more optimistic in the sense that, you know, so on the surface, it may appear that some of these kind of more creative, more generative side of human work is being replaced by AI and machine learning. But I think if you really think about all those jobs, those jobs are actually not that creative.
+
+They are actually more mundane in some sense. I think maybe it's a good thing to have machines to do these things. For example, I have a student currently doing some intern job in a company, which I don't want to name. But some of our intern projects is actually developing the so called RAC system, Retrieval Augmented Generation, this kind of so called RAC system for the company's HR department.
+
+So after that, if this project is successful, I can foresee that some people in the HR department may be losing their job. So this is entirely possible. But I think that for those jobs, they are easily replaceable because there's really not much creativity in those jobs. Okay. So maybe it's, it's not a bad thing to release their human workforce and so that people can work on different things and, and maybe this can help create more new jobs in the future.
+
+So that's somehow my gut feeling, but of course I might be wrong. Who knows?
+
+[00:22:19] Justin Grammens: Yeah. I like how you said you don't have the crystal ball, which you're right. I don't think anyone really has a crystal ball. It's always kind of more of a thought provoking question that I ask all of the guests on here. And I think the general consensus that I hear is, you know, that people are viewing it as more positive than negative.
+
+That a lot of the jobs that are being taken are like what you said, they actually are more mundane tasks, you know, that a human really, yes, they could do it if they wanted to be bored and they may just want to get a paycheck, but those are really not good use of human intuition. And when I talk to companies about what things should you look at for AI to do, things that involve human intuition, whether it be feeling, understanding, relationships, those are not good AI projects actually, right?
+
+It's the stuff that's pretty clear cut and it's actually a kind of the stuff that's time savers. So for example, I just published the latest version of this podcast just earlier today. We publish every other Tuesday. And so I started thinking about, well, what do I want to put on social media? Like how would I summarize this conversation that I had?
+
+And I had all the transcripts and everything like that. Well, I just threw it in a chat GPT. It created my social media posts with everything in a matter of seconds. And I didn't need to read through 60 minutes of transcripts and pull it all together. Like that was just brilliant. I mean, it was just such a huge time saver for me.
+
+And I think that's a perfect example where I can spend my time doing other stuff, like conducting more interviews like this with you, right. Rather than trying to figure out what words I want to use for a social media post to sort of summarize and capture what we talked about.
+
+[00:23:45] Kevin Liu: Yeah. So actually in terms of my own job, so I feel like maybe if you can only do a standard teaching, not really creating or generating new knowledge, then.
+
+Your job might be at risk because, you know, AI or whatever computer program, they might already do a much better job than they should. But on the other hand, at least for now, I'm not too worried about the research side of my job. So I think, yeah, at least for now, I think machine learning, AI, they are still not at the level of being able to, It generates something new, of course, they can generate a lot of things from data from, you know, all these, but they're still trying to mimic human intelligence in some sense, but of course, human intelligence itself also doesn't have a precise meaning to me.
+
+So I think that that's a more like a philosophical thing, but I still believe that if there's still some difference between human and machine. Then I believe that human intelligence can really generate new knowledge, uh, new things. I'm not sure machine intelligence can do that or not. So to that point, I, at least for now, I'm not too worried about the research side of my job.
+
+But of course, I have seen some AI or, you know, LLM system or whatever system that can help streamline the process of generating new knowledge. For example, there are some AI systems that can actually help mathematicians to do proofs. I think these things are entirely possible. In this case, I think that the AI is actually helping the human rather than replacing a human.
+
+[00:25:18] Justin Grammens: Yeah. No, I find it great to help me with idea generation, right? Generate me five different alternatives and it can be everything from five recipes, you know, that I should make for my kids this weekend to create me five different taglines for my business. Right. It's really, really good. And like I say, I'm not sure if I'm going to take any one of those verbatim and I maybe I'll combine them together, but it's just giving me really, really great.
+
+Options and alternatives that I can choose from as a human. So it really acts as like that sort of co pilot. And that's where I encourage people to use it. Not just blindly take whatever it says, but use what it's giving you because it's actually quite creative and a lot of new different ideas. I was reading a book recently where this guy was a software engineer and he was talking about it's one thing to have AI generate code, which I know a lot about, and actually the code it generates is actually really, really good.
+
+But I think he was working for the NSA and he was talking about code that they were writing were actually completely, no one had ever done this before, like it was basically new cutting edge stuff. And so that's maybe what I think you're getting at is humans are going to be able, the ones, the easier sort of break the bounding box and actually be able to think outside of what the current systems are.
+
+That potentially an AI would do, although the contradictory thing is that sort of go, you talked about go, right? Wasn't there like a move 37 or whatever that some, that AI pulled off that where humans were like, why would you ever do that? Right. It kind of still like people to stay. I think maybe they're scratching their heads a little bit on that.
+
+Right.
+
+[00:26:40] Kevin Liu: Yeah. So in fact for AlphaGo and basically their future versions, they're actually much better than human player right now. And so the funny thing is that. Of course, now we are hopeless to beat like an AI in a game of Go, but actually many human players, uh, use AI to kind of improve their skills right now.
+
+So I think in some sense, we're using AI to kind of improve our skill in playing a game of Go. I think that might be the The positive side of this AlphaGo story at the end.
+
+[00:27:13] Justin Grammens: Yeah, yeah. I don't play Go, but I do play chess. And I think what I read something is, you know, just because the computers beat humans now, easily, hands down, doesn't mean humans are playing less chess, actually, right?
+
+Right. They're actually utilizing the tools to get better and understand a deeper meaning of the game.
+
+[00:27:29] Kevin Liu: Yeah, exactly.
+
+[00:27:31] Justin Grammens: Well, cool. You know, how do people contact you, Kevin? Like if they want to reach out and talk to you more about your research and stuff like that, I will have notes like liner notes in the podcast.
+
+So if you have an email address or find you on LinkedIn, that's fine too. Oh yeah.
+
+[00:27:44] Kevin Liu: Yeah. So I think the easiest way is just to Google my name on Kevin Liu Jian, which is my official name on my passport. So. Jack, Kevin, and then I think the first entry that pops up on Google my homepage. So you will get all my content information there, including my email, my office phone numbers, and also all my social media channel, including LinkedIn, Twitter slash x and what else, or Facebook.
+
+Yeah.
+
+[00:28:12] Justin Grammens: Awesome. What do you see in the next couple years with regards, and maybe there's stuff you can't talk about, but like I'm just always curious on what you're seeing in the next. Round of advancements. Are we seeing bigger models, smaller models, more GPUs, less GPUs? I guess, what are you seeing in the immediate front windshield as we were going forward here?
+
+[00:28:29] Kevin Liu: So I believe that generative AI will continue to be the elephant in the room for, for several years to come. But I think, I don't believe in the scaling law proposed by open AI. So they claim that when in dubs, scale it up, something like that. Like, but I don't think that's the right direction to go. I believe that we should actually try to make the model smaller so that it can be easily deployed over the entire internet everywhere.
+
+But meanwhile, we, we should probably focus more on relying on higher quality data and, and these kinds of things to, to train the models. I think, yeah, this is probably the right direction to go. So if you think about it, right, so like we, the human machine, we learn things, you know, from. We just have a brain that consume like a very little energy compared to like a huge computing center, right?
+
+And we consume much less data compared to, you know, the training, like GPE model. Now, of course, you can argue it takes much longer for us to learn something over the years. But still, I think maybe this way of human being is a bit more efficient or more sustainable compared to the current way of doing generative AI.
+
+So I think definitely the next big moves in the industry and also in academia is to make the model smaller and continue to make the training and inference more efficient. And, uh, yeah, so these are my personal opinions.
+
+[00:29:53] Justin Grammens: Well, yeah, and I will say that's what I saw at the Midwest Machine Learning Symposium.
+
+Like just so many new fascinating techniques that people are working on and all the research that they're doing. I was just completely blown away. One thing I do like to ask. I mean, is there anything else you wanted to talk about? I guess before we kind of like wrap it up here, were there any aspects of AI machine learning, the research that you're doing?
+
+Maybe that we didn't touch on that. Maybe I didn't ask. I'm still exploring and learning the space. So I'd sometimes just say, Hey, do you have anything else to chat about?
+
+[00:30:18] Kevin Liu: Yeah. So I think. Besides all these generative AI, uh, and that are very trending right now, I think maybe something people may overlook is AI for science.
+
+So as an academic researcher, I think, you know, AI for science is something closer to my heart. And I believe that AI for science is really the strength and the niche area in AI for academia. Although there have been some important work on AI for science out there, for example, the Alpha Fold algorithm developed by Google, right?
+
+So for protein folding prediction. So these are something quite interesting out there already. But I still believe that the academia has the ultimate best interest in AI for science. compared to the industry that is more profit driven, money driven, right? So I think in terms of AI science, we can work on AI for physics, AI for mathematics, AI for biology, AI for astronomy or cosmology, all stuff like that.
+
+So I think these are also the, Uh, interesting areas we, the academic researchers want to focus on coming up.
+
+[00:31:20] Justin Grammens: Yeah, for sure. I love that. That's great. And you probably didn't know, but Applied AI is actually a nonprofit. So we're, we're a 501c3 nonprofit and our whole mission is just to educate people here in the upper Midwest around what's going on with artificial intelligence and sort of like, Bring the community together around this aspect.
+
+So, you know, we're kind of have an altruistic model. We're not trying to benefit or profit off of any of this. We're just trying to actually make the world better through our work. And I love exactly what you said there. I think AI can be applied to science to help us cure cancer faster, right? To help us with Alzheimer's.
+
+I mean, there's all these health things that AI can help with. So I love that. I love that aspect.
+
+[00:31:54] Kevin Liu: In fact, right now I'm working on a, some research projects collaborating with one colleagues in the medical school at OSU. So we are working on, uh, some. Very cool protein design problem, which is in mathematics, is essentially a multi objective sequence sampling and optimization problem.
+
+If successful, then I think there will be a lot of potential in, and also a significant impact. On, uh, drug discovery for cancer and maybe for large scale pandemic or things like that. Yeah.
+
+[00:32:24] Justin Grammens: Excellent. Excellent. Well, AI is the future and we're right on the cusp of it. It's just got so many interesting applications here over the coming years.
+
+So, well, thank you, Kevin, for all the work that you do. Like I said, you're doing a lot of different things and a lot of different, uh, organizations and moving the ball forward. So I really appreciate you taking the time and. Talking with, uh, myself and our listeners here on the podcast.
+
+[00:32:45] AI Announcer: You've listened to another episode of the Conversations on Applied AI podcast.
+
+We hope you are eager to learn more about applying artificial intelligence and deep learning within your organization. You can visit us at AppliedAI. mn to keep up to date on our events and connect with our amazing community. Please don't hesitate to reach out to Justin at AppliedAI. mn if you are interested in participating in a future episode.
+
+Thank you for listening.

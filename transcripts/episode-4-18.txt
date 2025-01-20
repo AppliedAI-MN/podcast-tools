@@ -1,0 +1,323 @@
+[00:00:00] David Wynn: The mental model that I like to give people is imagine a guy in a bar overheard 10, 000 hours of two people next to him talking about motorcycles. He has never seen or driven or heard or felt one ever. And then you ask him about question about motorcycles. Now he'll probably give you the right answer.
+
+And occasionally, he might compliment how your torque smells. It's not his fault. He's just trying to piece together everything he could possibly know about what's going on from what he's heard. He's not really thinking it through. And I think that that model is key for people to grasp. And as a result, summarizing, in which I'm trusting someone to come up with the important stuff that I need to know, I find to be a little bit of a suspicious case shortening.
+
+If we called it shortening, that'd be different. Summarizing. I'm a little bit wary of
+
+[00:00:48] AI Announcer: welcome to the conversations on applied AI podcast, where Justin Grammens and the team at emerging technologies North talk with experts in the fields of artificial intelligence and deep learning in each episode, we cut through the hype and dive into how these technologies are being applied to real world problems today.
+
+We hope that you find this episode educational and applicable to your industry and. Connect with us to learn more about our organization at AppliedAI. mn. Enjoy.
+
+[00:01:19] Justin Grammens: Welcome, everyone, to the Conversations on Applied AI podcast. I'm your host, Justin Gramans, and our guest today is David Wynn. David is the Principal Solution Architect at EdgeDelta and an enthusiast for all things technology.
+
+With a career spanning 15 years, including a pivotal role at Google Cloud for Games, David has cultivated a deep understanding of technical sales, solution architecture, and the transformative power of cloud services in the gaming industry and beyond. His unique perspective challenges the over reliance on AI, advocating for a balanced approach that leverages human ingenuity alongside technological advancements, especially in areas like observability.
+
+When he's not steering innovation, David revels in the vibrant geek culture of Atlanta and a regular at DragonCon, the largest multimedia popular culture convention focusing on science fiction and fantasy. His diverse interests span from technology to philosophy. So I'm sure we're going to have an awesome conversation today, David, about AI and its applications.
+
+So thank you so much for being on the program today.
+
+[00:02:11] David Wynn: Absolutely, Justin. Pleasure to be here.
+
+[00:02:13] Justin Grammens: Awesome. Well, great. You know, I talked a little bit about Google, talked a little bit about where you're at today. And I know we'll kind of, as we have our conversation here during this thing, we'll, we'll kind of work our way into that.
+
+But I'm always kind of curious when people are on, like, I mean, how did you get into technology? How did you get at Google? You know, were you always fascinated with programming?
+
+[00:02:31] David Wynn: So I grew up in Greenville, South Carolina, which most people would recognize is not the technical hub of the United States. And as I was doing the only teacher, shout out to you, Miss Harmon, that I had all four years of high school was my computer science teacher.
+
+And that turns out was just enough for me to take the ball and run with it to go and do something entirely computer science unrelated for college, where I was going to do economics. And the reason was, I'd sort of gotten the wrong impression that there was a certain stereotype of what you needed to be a programmer, and I didn't fit that, so I guess I'll go do something else.
+
+But learning economics in school and then turning that into my first opportunity out of college. I ended up spending, well, to set that ground, there was one guy at UPS, this is right around the 2008 crash, where things started to get really tricky from a forecasting perspective. One guy thought econometrics might be able to help, they hired a PhD person to do some thought work and push it through, and then they hired a grunt.
+
+Now I'm not going to say which one of those I was exactly, but let's say I spent a lot of time in VBA code, trying to make something that a smarter person than me worked once in Excel work for all 250 time series that we were responsible for. So this is where I sort of cut my teeth on a more practical sense of trying to pull all these things together, which to be clear, still not best practices, still not using any of the advanced algorithms or anything that scale that we have today.
+
+That theme really continued on with my career where I was doing that up at the front, then there was a need to move to California because there was a girl. There's always a girl. It worked out, which is great. We're happily married now. But when you walk around, she got an opportunity at Stanford and I followed along because I was smart enough to do that.
+
+And when you walk around the Stanford career fair and ask what people are looking for, boy, there's a lot of technology stuff out there. So I ended up doing it. Post sales implementation middleware, which is basically a form of ETL, almost like SSIS, but it was proprietaries in tap. They are still public, still doing very well, though.
+
+They've gone through several iterations and from there used a lot of those core logical components to. Build some scalable and robust pipelines for law firms to do various types of things. And I made the transition into observability when I got the opportunity to take on a pre sales role at a place named Sumo Logic.
+
+And then I got the opportunity to join Google Cloud back when it was small. And small by this definition would be 70 ish sales engineers across the entire globe. We all got into a training room for one week that I remember that went really interestingly. Then I got to cut my teeth on all things cloud, which is just some 350 products and all of the 400 competing ones at Amazon and all of the 300 competing ones at Azure and all of the 400 open source opportunities and how they all fit together in every conceivable combination and, and, you know, talk smart about it like you work at Google, gosh darn it.
+
+Yeah. So that was quite a rapid learning experience on everything from core compute to networking to storage. And of course, data. AI and such beyond, which then spins into where we are today, where I've taken a turn back into observability with some of the people that I met at Sumo Logic and I've been working at Edge Delta.
+
+[00:05:42] Justin Grammens: Nice. Nice. Well, maybe for our audience, what can, you know, there are some people on here that probably aren't in the. Technology realm, can you define what observability is?
+
+[00:05:51] David Wynn: So, depending on how good your googling and or binging and or chat GPT ing is, at this moment in time, it can be as simple as logs, metrics, and traces, which is to say, when you run an application, it tends to generate data about itself that tells you how well it's running, collecting and displaying all that type of information.
+
+Is a simple way to define observability. I like to take a broader view of it and say, observability is the process of running the things that you're doing well and making sure you understand if it's doing what it's supposed to be doing, which of course is broader than any particular metric and any particular understanding.
+
+It allows for some flexibility and approach and philosophy, but we're sort of in the middle of a transition inside the observability space, basically because the data has gotten too big. Yes. Uh, over the past few decades, there was a big mantra of, I'll simplify it this way. If you run a program on one machine, it tends to generate a file full of logs, which is information of what it did.
+
+If you need to run it on two machines, you now have two machines to look through if something goes wrong. If you have a hundred machines you're running this on, now if you know you ran into a problem, you have to go check a hundred machines to see if something's right? That can't be right. So, observability software pulls all that information together.
+
+Collect it all and then find out what's important later was the mantra right up until we started to hit like. Terabytes, and I'm talking hundreds of terabytes, petabytes of data generated a day. So that's not really scalable anymore. And so as a discipline, we're trying to figure out how to move in a different direction, get the things we need out of it without every single byte going through some sort of connection.
+
+[00:07:24] Justin Grammens: Yeah. Awesome. Awesome. Yeah. I mean, I, my background is more around the internet of things and sensors. And so I've worked in that space for 15 years or so and got to a certain point where it's just becomes too much for one human to process. There's just so much noise. You're always trying to find the signal in there.
+
+And so this is where I started getting into machine learning and deep learning and AI, that sort of whole realm. And I'm assuming. That's where you guys were trying to bring, you know, AI and can you talk a little bit about AI and how it relates to observability as a tool?
+
+[00:07:54] David Wynn: Totally. So there is a class of people who are very hopeful about AI and I'm not going to make any judgments about what the future may hold, but there is a perspective that exists where.
+
+Gosh, AI likes data, and if we throw all of the data that we've been collecting and paying out of the nose for, maybe it will find the answers. That's one perspective. There is also a very strong perspective that we have data and we have generally good understanding of it. Errors are bad. Crashes are bad.
+
+Failures are bad. I don't need a large language model to tell me that like the machine has crashed and that's bad, but interpreting that information can be a little bit trickier. So, for example, at Edge Delta, the way that we do this is we have a more traditional machine learning model that looks for statistical abnormalities, and then we will take the resulting thing.
+
+Thank you. sort of compiled error set that we discover there, and then we will feed that into an LLM in order to get a list of suggested next actions of what might be going on. I like to call it your 2 a. m. sort of crib sheet for what might be happening, because if you get paged at 2 in the morning because something broke, and you're like half awake, and you can't remember why you set the monitor this bright to save your life.
+
+Also, could you please figure out why this complex architecture is broken in production? Having a little quick list of things to check. That's pretty useful in terms of getting the problem solved and getting you back to bed. So that's where we're starting and where we see the value of it in almost this Translation of cryptic error inside of the logs into actionable step that you can take.
+
+[00:09:27] Justin Grammens: Yeah, got it Yeah And that's that's a great application around this gen AI space, right? Take all this information in and then allow you to sort of like actually talk to an agent That'd be good for somebody who's, maybe it's their first time on PagerDuty, like maybe they're a junior engineer, right?
+
+People are saying, yeah, this, you know, nothing will go wrong at 2am. It always does. And it's always good to have backup for these people, right? For sure. Whether
+
+[00:09:50] David Wynn: you're talking about new people to the team or whether you're talking about trying to bridge across teams, because depending on how distributed your decision making is and your autonomy with regards to how you build your application, there's a lot of isolation boundaries that you may need to cross depending on what your role is.
+
+And you could be walking into something totally different than it was last week if You have a really hard isolation boundary. And you draw that at an interface that's over HDP. It's like, we refactored everything into Rust because we decided to be correct this time. Oh, okay. You
+
+[00:10:19] Justin Grammens: never
+
+[00:10:20] David Wynn: know what you walk into.
+
+[00:10:21] Justin Grammens: Yeah. It's funny. I was talking with a guy recently at one of our meetups and he was just saying, you know, they're pouring over just a lot of logs, but then be like, they don't even know what they don't even know. Like they're actually getting hardware again. They're getting cryptic hardware. Dumps and they're just like, I don't even know what this means.
+
+So there he was looking for kind of what you're talking about, more of an anomaly detector in a lot of ways. But a lot of it is give me some suggestions on where I should even start, because sometimes you maybe didn't even write the underlying code. You're maybe calling into a library that somebody else wrote.
+
+[00:10:50] David Wynn: There's almost different ways that you can abstract the problem, right? You can think of it sort of at the core logic of the function may have a problem and there's an application issue that needs to be done. You need to get that. If you're the person getting paged, you probably need to get that off your plate as quickly as possible and go back to bed and be like, file bug, go home, restart service, just make it happen, right?
+
+But then there might be other conditions of can we capture the repo case is, can this be solved by turning it off and turning it on again? Which the beauty of cloud is that now we can turn almost everything off and on again. And, or if you think even higher level up, did we get into a state? where something is really a problem with our model.
+
+So, a lot of type based languages, right, like to say, make your, make state you don't want unrepresentable in your system. Okay, can we do that at the architecture level, knowing that that's a very sloppy translation in terms of making that happen? Maybe, and as a result, there might be more things that LLMs can do versus less things because they'll, in my view, and this comes with a qualification, but in my view, LLMs are very good at telling you about data they have seen before.
+
+They are less good. Some would even say bad, I'm not going to say who would say that, but some would even say not particularly good at showing you things that they haven't seen before. So there's an example I like to give where when you're chasing down errors. So often you're chasing the long tail of what's going on, because if developers do anything, all they do all day is come up with new and creative ways to break systems that we had no idea existed in the first place.
+
+So, how is something that's seen, even the entirety of every error that's ever existed, supposed to tell you tomorrow, what's different about that? Is here. It doesn't reason exactly so that the example I walk through is that when I was at Intap, I was tasked with figuring out what was going wrong with our billing system because we were trying to track time and it wasn't making it into Salesforce, which is where everything needed to actually go from our application, which was a different web app.
+
+Okay, web app looks like it's up and running, core logic looks like it's up and running. There seems to be some sort of problem with the database, so I jump into the database and I take a look at what's going on and the error log reads, failed, you haven't paid us, call this number. Okay. And I was like, what is this?
+
+And so I asked my boss and he Promptly picked up the phone and grabbed his wallet and it turns out we'd use this like sync service that synced a SQL server database to the force. com back end so that we didn't have to deal with any of the force. com calls. My point that I make when I give this at conferences is who's run into that error and who here thinks that I've ever run into that error again?
+
+Right? There's no hands on either of those answers. And if that's the case, LM's are going to have a really hard time with. Showing you some sort of solution to that problem, but using them where they can be very helpful, you know, where they are shameless and generating new ideas, where they are very good at constructing these sort of outlines to get started, getting you from blank page to going, getting up and going, all that stuff is really useful.
+
+[00:13:55] Justin Grammens: Yeah, for sure. 100%. And. Yeah, you talk about, you know, yeah, I talk to people fairly often now about if there's any human intuition involved, you know, that's where AI is not really good. It really needs to be spelled out. X, Y, Z gets you here. Unless you want that. Now, again, I think generative AI, if you turn the temperature up and you wanted to write crazy poems, It's pretty damn good, and in fact I would assume that a lot of these writers and stuff that are writing fantasy or non fiction type stuff are probably going to be using these types of things.
+
+That it's like, it actually is a really good tool to get them started. But in certain cases, still, again, I think maybe that's the fear, is that in the future these things are going to get so good that they actually would be able to pick that up. Uh, we might be in for a world of hurt with regards to the number of humans that are gonna need to do all this observability stuff that we're talking about.
+
+What's your thinking on that? You know, do you, are you concerned about technology and people losing their jobs and people in your position and of being put outta work because these AI systems are just getting so much better? These agents now are fed with a lot more information and it's just, just inevitable that something's gonna happen.
+
+[00:15:01] David Wynn: No, not really not. And what I tend to say for people who are worried about that is I encourage you to try and get any of these technologies to do the thing that you're afraid of it doing. And you might immediately run into some degree of challenge. So. Actually, art is a great example. So with some of the more interesting stuff coming out of Sora and various other models, right?
+
+Oh, you could make a whole video and do a thing. There's a fox jumping over a river and it's quaint and beautiful and stuff. Have you ever tried to ask it to keep the same thing except make the fox blue? It just doesn't do it. Yeah. It's so frustrating. And so when you're talking about. The requirements and specifications of art where it's this image in someone's head that they want really fine grained control of, maybe there is a way to get a broad brushstroke of what you might like to do, but you'll end up throwing so much of that away in pursuit of the real product to actually get down into what the nitty gritty of it is, especially if the end result is an image or a video or something like that.
+
+And to me, it extends into the more. Let's just call it like data ish realm, techie realm, like the analogy holds. Is our job as podcaster going to eventually be taken over because an AI will have perfectly captured our voice and be able to make poor metaphors and have bad jokes about DragonCon and old text editors that are definitely still relevant?
+
+We're not here to upset anybody in the audience. Can we be replaced? In some sort of sense, but not in any way that's Really important. I view it like data was several decades ago, where it's like, oh, data is going to take over everything. And then suddenly data is going to be like, yeah, data did take over everything in the sense that we all now use data all across the aspects of our lives in order to make it better.
+
+And I think AI is going to be very similar. It's not coming for you, but it will help improve. A hundred, a thousand paper cuts that you have every day, some of which you might have just accepted as reality. Some of which you might think, Oh, I don't know how to get through this, but suddenly it does. I think that creates a very interesting.
+
+Because that's my current perspective, which of course we have to make sure that we date, which is, you know, we'll talk about it before DragonCon 2024 is currently when we are recording this, which is Labor Day weekend every year, if anyone wants to come in to say hello to me down in Atlanta, but if a big value prop of the current iteration of technologies is about smoothing the paper cuts throughout our day, It's really hard to recoup those costs from an economic perspective, right?
+
+What is the entity that reaps the value of that coming back around? We saw this big push towards billion dollar trained models, right? Of just the next GPT insert giant marquee number here, or whatever Google decided to rename their thing for here, or whatever fantasy character Anthropic decided to name their next one here.
+
+You know, they're, they're all very showy and flowery and huge, but now we're starting to see the trend back towards, we're not doing the biggest model. We're doing a much more value focused model, much more effective models. That's going to be very appropriate for, Oh, I forget what Microsoft, they just released the new Excel thing, right?
+
+So there is something that is more targeted at interacting with Excel, which is, It's gonna be a huge benefit to everyone that doesn't have to go look up what the specs for VLOOKUP are or figure out exactly what the right cell formulas are in order to do, you know, date functions for quarters, but minus weekends and this specific list of holidays, right?
+
+That will be natural language to now spreadsheeted. Hooray! This is all great. I guess the value goes to Microsoft in that case, but it's certainly not going to go to some other startup. That's, we're going to be the amazing thing to do this and we'll 10x every spreadsheet software. Of course. Probably not.
+
+That's my guess.
+
+[00:18:53] Justin Grammens: Yeah. Yeah. There are, so I think what we're seeing a lot now is existing tools are just becoming more intelligent. Like you said, they're just AI starting to happen underneath a lot of just the average Joe and Jane user. Like I was on a zoom call this morning and there's a button you can push that just says, catch me up.
+
+Right. So all the texts that was talked about earlier in the meeting, if I might've missed it. I didn't miss the meeting, but I was like, yeah, this is fun. So during the meeting, I'm just clicking buttons, you know, and generate me the action items in the notes from the meetings. I think what we're seeing is a lot of people are like, yeah, this is going to be a revolutionary change.
+
+All these new products are going to flood the market, which there have been. And this is what happens in a lot of these things. Everyone puts ai on the end of their domain name. And most, all of them are going to sort of fall to the wayside. They'll get acquired or they, turns out that they're not useful.
+
+Actually, you basically, you actually don't need this tool. But I think what's cool is I think as the Joe and Jane user, as they keep using their products, they're going to start seeing more and more of these. agents that will sort of be there to help them. And I'm with you with regards to like bigger is not necessarily better, right?
+
+This, the fact that we're going to now have, uh, you know, trillion parameter models. In fact, I even heard Sam Altman, this was a number of months back, but he's, it's not the size of the models. It's going to be more around the tuning. It's going to be more around the human reinforcement and learning that needs to be added into these.
+
+That's really going to be interesting. And. You know, Google has a thing called MedPalm, which is basically focused on just medical and they're finding really good success in those spaces. I'm with ya, but I think, you know, there's general knowledge and general consensus and there's a lot of hype that people don't, they just don't know which way's up and they don't know what to believe.
+
+And
+
+[00:20:26] David Wynn: I don't know if you keep up with the web comic scene, very important scene to understand culture in general. Saturday Morning Breakfast Cereal by Zach Wiener Smith is an amazing comic. And I believe the 22nd of July's comic, something like that, was about an economist who had figured out how to tell if The economy was running too hot and she was presented to the legislature was asked, how do you know that?
+
+And she goes, here is a balloon, which I just received 40 million to develop my new startup for. And all I have done is drawn the letters AI on it in a sharpie and the legislatures just say, Oh my gosh, when's the series be? And she goes, okay, we're doomed. But yes, lots of a hype going on right now in the system.
+
+We'll see it weed out and sort of creative destruction style, because honestly, nobody knows if any of this stuff is going to be. The next big thing, or if it's going to have unusual properties that might really scale out, we don't know. I was curious, Justin, because you brought up something that is one of the things that I suppose is one of my controversial takes when it comes to AI, which is, I am not confident in AI's ability to summarize stuff.
+
+And I know that's one of the key, the key value props that a lot of things can, you know, pitch AI for. I have confidence in its ability to coherently shorten things. I don't have confidence in its ability to summarize in the sense of get the big gist of or the key takeaways of because as we alluded to earlier, Judgment is not really where LLM's currently.
+
+I like to think of LMs as an associativity based tool, not a reasoning based tool. So if you've got, the mental model that I like to give people is, imagine a guy in a bar Overheard 10, 000 hours of two people next to him talking about motorcycles. He has never seen or driven or heard or felt one ever.
+
+And then you ask him about question about motorcycles. Now he'll probably give you the right answer, right? And occasionally he might compliment how your torque smells. It's not his fault. He's just trying to piece together everything he could possibly know about what's going on. From what he's heard, he's not really thinking it through and that model is key for people to grasp.
+
+And as a result, summarizing, in which I'm trusting someone to come up with the important stuff that I need to know, shortening, if we called it shortening, that'd be different. Summarizing, I'm a little bit wary of, do you agree or do you have a hot or hotter take that you want to share?
+
+[00:22:59] Justin Grammens: Great question. You know what, I can see both sides of it.
+
+Number one is I think some of the transformer architecture, the ideas around that these are the most important words that have been used over time. These are the key concepts behind it. And so part of me believes that, and then of course the whole human feedback, you know, real time learning that these models now, cause they don't just take them out of the box and say, okay, here you go.
+
+They've been tuned, right? They, they basically been reinforced with human feedback. To give them some of those aspects of it. So, I would say, part of me is, Okay, I, I can see that happening. With regards to, you're right, the motorcycle piece. Uh, yeah, I've just, I've read all this stuff. Uh, I'm an encyclopedia of knowledge on this type of stuff.
+
+And so now, based on everything that I've heard, And the key concepts that I've heard, I'm gonna take those as the most probabilistic. Because that's all it's doing at the end of the day. Most probabilistic people have talked about this. When you ask me a question, I'm gonna bring that up. Now. That's one side of my brain.
+
+The other side of my brain, David, is that when I do this podcast, and we'll do liner notes and stuff like that at the end of this. So our entire conversation will be not only transcribed, but then I'll feed it back through and ask it to give me some sort of a summarization. And to this day, I have not been able to find in my planning is trying to actually build one myself, but basically be able to say, pick out the key points that you and I talked about, but also.
+
+Find me links to the websites, right? You know, based on your background around DragonCon, we should definitely make sure that we have links with regards to DragonCon. I haven't found an AI to do that. I haven't found it to basically go through and say, here's the key concepts that we talked about. I'm going to go out and basically find the URLs for all these things.
+
+I'm going to stitch it together. And we're going to have a bulleted list of a dozen items and links off to those specific things that we talked about. I still have to do that as a human. I still have to like. Take a look at what's there and be like, okay, I'll put a link off to this and that, and this and that, and I have not found a large language model.
+
+So per your point, it feels like that, yes, you're right. It doesn't actually grasp really the, it couldn't, it can't to this day grasp. Okay, here's the key things that we want to talk about. And if somebody is just saying, just give me links off to a number of things that David and I talked about, there's no LLM that really does that very well today.
+
+So I see both sides of it. It's probably dependent upon. You know, probably one of them is good enough, right? So it could be good enough. Is it perfect? Then if a human were to actually summarize a lot of this stuff and read through all of it and bring their human aspect to it, probably not. But maybe where I would land on this, is it good enough today?
+
+All we're trying to do is actually improve the amount of efficiency, I think in a lot of ways, and get rid of a lot of mundane tasks. And if the LLM can get rid of that and do it at a reasonably well level. Then maybe at the end of the day, it's good enough and we'll just, we'll just live with it. Maybe. I thought you were
+
+[00:25:39] David Wynn: going to say you struggled to, uh, find good key important points out of the transcription.
+
+And I was just going to say, that's because I don't say anything important.
+
+[00:25:48] Justin Grammens: I just say, no, it's, I always find something interesting. And with these podcasts too, the first like 40 seconds is just going to be what I call the gold. Right? So I'm going to take 40 seconds of your, of something that you said, some enlightening thing.
+
+And believe me, you've said saying a lot of enlightening things already. But that's the way all these podcasts start. And, you know, I'm just reflecting right now. I cannot find an AI that basically says, roll over this hour talk that I had with somebody and find me just that awesome nugget, just that one or two sentences, you know, in the audio that is really highlighting the entire conversation.
+
+And it's not doing that for me today. So I still have not been able to automate this. The other thing about the, you know, Oh, are we going to get automated out of a podcast job or out of a conversation? It's just, you know, like, where does it end? Would I set up my bot to talk to your bot? And essentially we just have bots talking back and forth, which is probably feasible today, but does anyone actually want to sit down and listen to that?
+
+Even if we could make our audio sound the same, our voice sound the same. It, it just, it lacks the authenticity of our real conversation like this. Absolutely.
+
+[00:26:49] David Wynn: I don't want to listen to myself talk in real life, let alone a simulacrum of what I'm supposed to say.
+
+[00:26:55] Justin Grammens: This idea of observability and AI, you know, the hottest thing that happened over the past four days was CrowdStrike.
+
+Right. And I was thinking about that this morning. I was like, you know, I don't know if there's any play or if you could even think about, you know, is there obviously. They must have had some sort of anomaly detection going on or something. People that I know That are in the financial industry, that are in healthcare.
+
+We have a lot of companies here in the twin cities that are in that space. And they were telling me, Justin, like I got paged at 2:00 AM like, you know, like literally after the patch went out, like I was getting hit, right? And so it seemed like whatever they did on their side, obviously they reacted very quickly.
+
+But it also points to this just fact of maybe we should be thinking about using AI when we do our. Testing, like around quality assurance. I don't know if you saw any of that at, at prior jobs or companies you're working at or seeing some of that happening, but it feels like what happened was just, uh, I don't know, it just, it shouldn't have happened.
+
+Obviously, right. It just seemed like a dumb error.
+
+[00:27:52] David Wynn: It feels like something, if it had that much of a blast radius, it really feels like something that should have been caught earlier. My understanding is that it was due to some C code that attempted to access an invalid memory address, which everyone's favorite technology insert here will all say that it could have fixed the problem.
+
+You know, the rest people were like, We don't even do invalid memory addresses! And the AI people are like, We can probably figure that one out! And so it's just There's a lot of stuff from all directions. I've actually been looking a lot into testing lately because it's been sort of an interesting hobby project of mine to get more into property testing and model based testing.
+
+And some of that's different stuff, trying to figure out if there's a way to transform observability because a current sort of research hypothesis of mine is that observability, even though I gave you the definition at the top of the show, I think it's. an ill defined problem. People don't exactly know if they're doing observability well or poorly, and if they make any changes, did it get better or worse?
+
+Um, there's just sort of the end of the day, who yelled the most and were we down or up more, which is not exactly right. So I've been Looking a lot into testing to see if there are any practices and principles we can bring over into the space. But, boy, it feels like they should have had some system somewhere that bluescreened and they were like, Yeah, maybe we shouldn't push that one out.
+
+I wish I had more insider information.
+
+[00:29:18] Justin Grammens: I don't know. But, you know, it just seems one person would have installed this on their machine. It seems like it was easily reproducible, like you said, and in fact, even the fix, the guys that I was talking with that run on prem services, they're like, yeah, this is what you got to do with just delete a couple things.
+
+It was just like a file, like delete one file and you're done. So it's just, wow, how could you not actually have some sort of an AI agent just installing and reinstalling, installing and actually be able to sort of catch this before the push went out. So really weird.
+
+[00:29:46] David Wynn: I would think of this more as sort of a cloud based approach.
+
+If, if I was modeling this in my head, I would have this more, we have an absolute bank of different versions and deployment strategies and stuff of machines that we deploy every fix to in sort of our smoke test environment in order to figure out is anything going to go horribly wrong or not? And, you know, you've seen this in some of the articles, but this isn't the first time that CrowdStrike has borked any particular OS, I think they, they hit Red Hat a few, it was months ago, or somewhere in a year ago or something, where basically the eBPF thing that they loaded wasn't working.
+
+Okay, they occasionally do this. A lot of the practitioners that, that I have read about are all like, you know, you probably shouldn't just apply hotfixes from third parties live in production all of the time, that's probably bad, right? Sure, there's definitely truth to that, but there's also the other, the other side of it, which is that we are finite humans with time and attention and various other concerns to address.
+
+And sometimes we don't do everything the way that best practices should be because those books are really long and I got to go home and eat dinner.
+
+[00:30:50] Justin Grammens: Yeah, I was just thinking about this weekend. So, I mean, I grew up in the era of NASA and the Challenger explosion, right? And so the reason that that happened, I remember, I mean, I was a little kid, but I remember They were launching new things, like, literally every week.
+
+It just became like, Oh yeah, we'll send another rocket up, we'll send another rocket up. And what happened then, and I think is what happens now, is you just become overconfident. You're just like, Oh, we've done this a hundred times. This is just a simple patch. Throw it out there. No need to do final testing.
+
+No need to do this weird edge case. Like we know what we're doing and that's exactly what happened to NASA. I mean, you know, there were a lot of different other reasons with regards to, you know, the temperature and the O ring and all that sort of stuff. But the fact of the matter was they just became overconfident and they just felt like we've always done these before.
+
+We've always launched on these types of conditions. Nothing ever went wrong in the past. It'll be fine. So yeah, that's what I was kind of thinking about with CrowdStrike.
+
+[00:31:39] David Wynn: And there's sort of a question of, can you code humility? Can you essentially, this is almost what the property testing people want you to believe, is that you can make a machine so chaotic or the chaos monkey engineering people, where it's like, we can make the machines so evil and so dastardly and hit you in ways that you could not have possibly predicted.
+
+We will make sure that you feel a little bit more on your heels, a little bit more defensive to beat that out of you. There's One of my favorite, one of my favorite people that I've been reading recently is Will Wilson, who's over at Antetsys, which is the super cool looking startup that does a lot of testing stuff.
+
+But one of the things he says about the testing framework they built is he's the thing that keeps us up as night is. We make this testing thing that hammers your software to make sure that you get rid of all the bugs But if you really think about it All we're doing is training you to create bugs that we can't test our way out of and that's a really scary thought Yeah, you hope that maybe at the other end of that somewhere there's the perfectly smooth path but there may just be the perfectly smooth path with some rough patch that looks perfectly smooth that would be You It would be even more dastardly though with an event like this week.
+
+It's hard to imagine how I mean, as given that I live in Atlanta, as we've mentioned, uh, the airport looks bad y'all, uh, It's still not good. And this is the
+
+[00:33:05] Justin Grammens: following week. Oh, no, i'm flying to uh, savannah actually, uh, Actually, I think i'm flying directly to savannah So maybe i'll avoid the the atlanta airport, but i'm flying there on friday.
+
+So I hope things are cleared up by then Knock on wood Yeah, I know, man. Crazy. That whole chaos engineering. I definitely will, will need to put some links off to that because just that concept I think is pretty interesting about being able to, you know, introduce failures and faulty scenarios, even on yourself to basically just see how resilient we are.
+
+I think far too many companies actually don't take, I would say the vast majority of them don't take that approach. They don't get behind the curtain and say, what happens if I unplug this wire? You know, what happens if this thing goes offline? Man, and I think it's an interesting thing. You can go too far, obviously.
+
+Hunting down things that theoretically will never happen. There are certain things that you could probably say will never happen. And if they do, then all bets are off. You know, nuclear explosion, whatever. I don't care if CrowdStrike works or not. And some of those cases, but yeah, that idea of actually creating some chaos within your system to see how resilient it is, I think is an interesting concept.
+
+It is, and it's
+
+[00:34:08] David Wynn: one that people run in the numbers in terms of the security and risk and compliance and things don't. Like to acknowledge they would rather us do it right the first time, which is the way I hear my wife tell me to do things. And chaos engineering suggests that we know that's not possible and that this is a better way to go about it.
+
+But we have to figure out how to scope it appropriately so that we can also meet our SLOs. On the other hand, because we can't chew through all our error budget with testing. That's not good. For sure. Yeah.
+
+[00:34:38] Justin Grammens: You sound like you've been doing some reading and stuff like that and you attend conferences. I always like to sort of ask people if I was just entering this field right now, what would you suggest I do?
+
+What interesting things are you seeing out there? You know, are you reading certain blogs? You listening to obviously, you know, podcasts? Yeah. Well, where would you suggest someone
+
+[00:34:55] David Wynn: start? So it depends on which angle you find yourself drawn to. The general meta advice that I would give is go with whatever you're interested in and it does not matter.
+
+How niche or esoteric or to the side, it seems. In fact, the more, the better because there is room for a million long tail interests. That's conservative. There's room for a billion long tail interests on the internet. I mentioned that I'm getting into testing. To be clear for those that don't know in the audience, nobody likes testing.
+
+Testing is terrible for a whole host of reasons that I could talk about for several hours, but I find it really interesting. And so that's what I've been digging into lately, but it's taken me into YouTube talks from 2013. And currently it's 2024. It's not like this is all fresh and new. This is the same 15 or 16 people that are trying to push the field forward.
+
+Yeah. And everyone else is just begrudgingly being dragged along. If you've got something that hooks your interest, whether that's on the prompting side for doing the AI type stuff, whether that's And the integration side, you know, pulling things in from vector databases or rag, or if it's going the more traditional route on the ML side and doing k means clustering or different types of, you know, different types of analyses that you can pull out of there, follow your heart because all of it will be terrible.
+
+At some point, there is nothing that exists that is not terrible if you don't dig enough into it. And so that interest in that spark you start with matters a lot. And we live in a tremendous age right now where you can go and learn about whatever you want. If you can figure out how to search Google instead of click on YouTube, you have a leg up on so many people in terms of learning cool new things.
+
+Just hit Google, you know, maybe ask around on Reddit. Uh, do the classic thing where post the wrong answer and plenty of people will jump on you with the right answer to correct you and just go for it. That's what I have to say.
+
+[00:36:53] Justin Grammens: I love it. It's great. Yeah. And you, I had to chuckle because you're right.
+
+You're watching videos from, like you said, eight, 10 years ago or whatever, even longer. And, but those people, sometimes it takes that long for an industry to start to shift. You know, I remember I started back in software engineering. Back in the early days when, um, boy, this whole idea of microservices was just not even, no one was doing it, everyone was doing XML.
+
+You know, we were working on Sun Solaris Unix systems, right? And no one was really using Linux at the time. Like it was like this weird thing. And I just, I love open source. I love REST. I was talking, I was like preaching REST at this big organization forever. Right. And you know, it just took a decade for them to finally turn around.
+
+So yeah, you're right. Just because something looks like it's old on the internet. It's just, it's not. Cause some of these things end up taking a long time. And in fact. If you're doing it and you're out reading about this stuff and people are telling you that's crazy talk, you actually are on the right path.
+
+[00:37:49] David Wynn: You never know what's going to guide you in the right place. And big and small organizations all make this mistake. The story that I like that I'll tell here is so Google cloud. Started with one product in contrast to AWS, which started with S3, which is object storage, very simple, put an object somewhere and we'll give you a URL and you can get that object whenever you want.
+
+Then they did EC2, which is virtual machines, which is just a computer. You can install whatever you want on it. Google's first product for cloud was App Engine, which. is not a virtual machine. They give you essentially a library that you write to and you write a special little application and then Google takes it and they do all of the things with it.
+
+They manage every single thing for you. They did it that way because that's how Google engineers coded, they didn't deal with virtual machines and installing stuff they wrote to this little library and then the Google SRE team handled all of it for them. But when presented to the market with that, it just wasn't a huge success because it turns out that would involve a lot of rewriting applications that already exist.
+
+You've got to find the intersection. Of where is the world and if you want to nudge it in a different direction, you got to build the bridge brick by brick in order for it to get there. And which is again where motivation is going to become a big key in order to make it happen.
+
+[00:39:12] Justin Grammens: Yeah, for sure. No, I remember App Engine coming out and I remember like it was the original platform as a service, right?
+
+I remember working with this guy and he's look. One command deploy, you know, infinitely scalable. And my, my mind was blown. I was like, this is amazing because I have always had to set up all sorts of different things and set up a load balancer in front of this stuff and do all that stuff. But I know what you mean.
+
+It was ahead of its time in some ways, you know, it might even still be ahead of its time, but it was just, you know, it was like, wow, this is true. Pass, right? The service. Good stuff. And clouds
+
+[00:39:45] David Wynn: evolved from there and a whole bunch of other things, now containers are all the rage. Right. Yeah, obviously. You can find, uh, me and Justin on the socials, I'm sure, and we'll talk about all the other stuff.
+
+For sure.
+
+[00:39:54] Justin Grammens: Yeah. To, to sort of like wrap up here, how do people get ahold of you? Is it best to just to find you on LinkedIn or,
+
+[00:40:00] David Wynn: uh, LinkedIn? I have to say, I like LinkedIn more and more these days, so that's the best place to reach me. I will have on a very professional looking blazer in there, which I never wear outside of that picture, but that's what I'm wearing right now.
+
+Oh yeah. For sure. I work out of my basement. I'm told I live in Atlanta because I don't have to fly to DragonCon anymore, but I mostly live
+
+[00:40:21] Justin Grammens: here. Good. Yeah. We'll have links up here, your LinkedIn page, everything else you and I've talked about, we'll have links off to your companies as well. You worked with a link to DragonCon for sure.
+
+I don't know, David, is there anything else that maybe a key point that you maybe wanted to cover that we didn't cover? I've just been doing this here with more like more of my more recent guests, but yeah, I just want to make sure that. Maybe there wasn't a question I asked or a specific subject you wanted to cover.
+
+[00:40:47] David Wynn: Not about technology, but I do want to leave everyone that's listening with something that I found really inspiring lately. Which is, particularly, with a lot of events going on in the world. And with The speed at which technology is evolving, it can feel a lot some days, like the world is happening to us that we don't really matter and that we don't make a difference because it's just us with these two hands in front of us and they're so small and that's only so much we can do.
+
+But the thing I've been lingering on lately that makes me feel more hopeful is the people. The shoulders of giants that we stand on, that many of which are chilling out because they're older these days or maybe have passed on in different dimensions, your ancestors were no better than you. They had all the same doubts and all the same worries with slightly different colored clothes and maybe less Wi Fi.
+
+And they got up and they made cool stuff happen. And so can you. And so that's the thought I would leave everyone with.
+
+[00:41:58] Justin Grammens: Inspiring. That's inspiring, David. That's great. That's, yeah, you're right. People can get so wrapped up in, I guess, a lot of the negativity that's happening, too, in some ways. And realize that there's always an upside.
+
+And no matter what time in the world that you lived, you can always make and have a positive impact. I appreciate you being on the show here, obviously giving back, taking time to sort of talk to the audience here and wish you nothing but the best. We'll definitely keep in touch and all the work you guys are doing at Edge Delta.
+
+I think it's really cool. We didn't talk about that product or that platform really nearly as much as maybe you wanted to, but I enjoyed the conversation a lot. And that's what the whole point of this was, you know, conversations on applied AI. It's just all about getting people together and talking about artificial intelligence.
+
+And how it touches a number of different areas. So thank you so much for being on the program today.
+
+[00:42:45] David Wynn: It was a pleasure. We'll have to come back and chat more.
+
+[00:42:49] AI Announcer: You've listened to another episode of the Conversations on Applied AI podcast. We hope you are eager to learn more about applying artificial intelligence and deep learning within your organization.
+
+You can visit us at AppliedAI. mn to keep up to date on our events and connect with our amazing community. Please don't hesitate to reach out to Justin at AppliedAI. mn if you are interested in participating. Participating in a future episode. Thank you for listening.

@@ -1,0 +1,317 @@
+[00:00:00] Satish Movva: The way I approach the problem, I think, at least for me, worked really well. And that was seeing the problem and then trying to find the solution. I see a lot of people coming with a bunch of solutions and trying to apply or find a problem to apply them to. Very rarely does that work. It needs to be a problem you found.
+
+That meaningfully resonated with you at some personal, deep level. And then you start looking for, well, what technologies can I apply to make that work? I think that would be the right way for you to get into elder care and things like that. If you have a grandparent that you see aging before you, or you're visiting your grandparents or your parents.
+
+In a care home of some sort, and you start seeing how they're living and what the issues they are facing, and then really try to understand what technologies that you're aware of may actually apply to them. I think that would be, you know, truly the way to start down this path.
+
+[00:00:56] AI Announcer: Welcome to the Conversations on Applied AI Podcast where Justin Grammens and the team at Emerging Technologies North talk with experts in the fields of artificial intelligence and deep learning.
+
+In each episode, we cut through the hype and dive into how these technologies are being applied to real world problems today. We hope that you find this episode educational and applicable to your industry and connect with us to learn more about our organization at AppliedAI. mn. Enjoy!
+
+[00:01:27] Justin Grammens: Welcome, everyone, to the Conversations on Applied AI podcast.
+
+I'm your host, Justin Grammens, and our guest today is Satish Muvva. Satish has founded two companies, both harnessing cutting edge technology and focusing on health. His latest company, CarePredict, has a simple goal, making it easier to take care of and look out for seniors. He's invented a wearable device called Tempo, the first designed for the elderly, which lends our activities of daily living and compiles these patterns into an individual's rhythm journal.
+
+Prior to CarePredict, he founded ContinuLink, a innovative home care medical staffing and hospice IT SaaS company, which he sold to Pecura in 2011. Innovation and healthcare have been constant themes throughout his career, and he's passionate about exploring and finding new ways to tackle problems. And after learning about his background and meeting him just this past year here at the NIC Data Analytics Conference that I keynoted.
+
+I knew that his perspective would be super valuable to our podcast listeners as the applications of AI are a perfect match for the challenges we are seeing in healthcare. So thank you Satish for being on the program today.
+
+[00:02:26] Satish Movva: Justin, thank you very much for the opportunity to join your podcast. I'm really excited to speak about what we're doing and how it could be relevant to your audience.
+
+[00:02:34] Justin Grammens: Oh yeah, super excited because we're all about the applications of AI, which I know your company is doing a lot of that stuff. So I mentioned a little bit about, you know, a couple of the companies and where you're at today, but maybe you could fill our listeners in. Kind of around the arc of your career, kind of how you got to where you are today.
+
+[00:02:49] Satish Movva: Yeah, absolutely. I started out in technology pretty early on, uh, early eighties. And actually I was at the university of Illinois when the mosaic browser was being invented. I was actually one of the grunts that were working on doing the quality control and quality analysis of a mosaic on IBM's version of Unix called AIX on the outer 6, 000 risk platform.
+
+So really, really deep roots in technology. I started out from the technology side. Then went on to work for IBM for a while in the verticals of security subsystems, as well as insurance and others, and then moved on to the healthcare side. So I've been in the healthcare technology probably for the last 30 years or so, started out creating the first mobile electronic medical record on a Palm Pilot in 98 and actually had 3, 000 of our physicians documenting it.
+
+And for whatever reason, they loved documenting on a Palm Pilot with the graffiti language. Yes. Because only Palm and the doctors knew how to interpret their, their handwriting.
+
+[00:03:45] Justin Grammens: For sure.
+
+[00:03:46] Satish Movva: Yeah. And then I went on to create, uh, what became the first SAS neonatal intensive care unit, electronic medical record system called Neonotes.
+
+And then after that, as you mentioned, went on to create the first SAS. Home health and hospice software in the country. And we spun that out and we sold it. And then I created CarePredict. I mean, my entire life I've been very much entrepreneurial, but prior to CarePredict, I was more of an intrapreneur that had created products out of larger companies for use outside, but with CarePredict, I, for the first time, become a true entrepreneur just for myself.
+
+[00:04:19] Justin Grammens: Wow. Yeah, that that's gutsy to take that big leap. And I've been an entrepreneur or serial entrepreneur here for many, many years. But there's a little bit of difference between kind of what I'm doing and what you're doing. You guys actually kind of went to market with a piece of hardware, a full stack solution here and you're building a product and it's in probably one of the most regulated industries, I think in the world.
+
+And so I'm sure you're running into a fair amount of challenges just getting that company off the ground.
+
+[00:04:44] Satish Movva: Yeah, yeah, without a doubt. You know, when I created CarePredict, it was mainly targeted and is still targeted to the elderly. Elderly are always, uh, you know, an underserved community in terms of technology.
+
+And it seems like as soon as somebody becomes old, we kind of discount them from the technology arc. Yes. And that's not really fair because technology has the highest impact. On seniors and the way they age and allowing them greater independence and keeping them healthy much longer and much more economically.
+
+So when I started CarePredict, it really was around trying to figure out how an elderly person is truly aging and get objective data around it without having to have something creepy like cameras around to watch them. And the reason for that, Justin, is very simple. As human beings, our brains are hardwired over evolution.
+
+To always observe each other. And the first time one of us does something different. You dive in and find out what's going on. For example, if your child comes home from school and they don't look their normal, what you're doing is comparing a subconscious model you've created of their baseline normal to their current activity, and then you're saying there's an anomaly here.
+
+Now, that used to work really well when we were all aging together under the same roof or the same village or the same town. That model is broken apart now because the elderly are aging in isolation. So now we have this issue of, well, where is that human observation component? Where is that evolutionary advantage that's been given to us that's no longer available?
+
+So CarePredict essentially became a vehicle for continuous mission observation of elderly folks and their activities and behaviors and trying to figure out where those anomalies are so we could react and intervene ahead of time.
+
+[00:06:27] Justin Grammens: Yeah, yeah. Sort of that predictive maintenance, right? We talk about predictive maintenance for machinery.
+
+This is predictive maintenance for the elderly.
+
+[00:06:33] Satish Movva: You got it. It's identical. I mean, I hate using that analogy because I've used it in the past. Have you? I would say, look, you know, Rolls Royce monitors every jet engine in the world that they sell in real time telemetry. And they can tell when the thing needs maintenance and they can do predictive preventive stuff to it.
+
+And people always tell me, Oh, you can't compare humans to engines, but you know, the model is the same, right?
+
+[00:06:55] Justin Grammens: Yeah, exactly. Well, and, and again, I think the ultimate goal is true to your heart and what you want to do, which is get people better, right? And be able to deal with it as it happens. Now, how have you seen that in the past?
+
+Because this company was started, what, a decade ago?
+
+[00:07:09] Satish Movva: Yeah, back in 2013 was when I created this company. And I don't know that AI was in its heyday at that point. I mean, AI had its own flows and ebbs throughout the years. And deep learning and Geoff Hinton. Those came maybe, you know, a half a decade prior to that.
+
+They weren't really top of mind for people when we started. You know, we started out right from day one being an AI powered company because we were using machine learning, deep learning, and things like that to detect activities. We'll have to go into detail on how we are using those technologies, how we classify activities and behaviors and things like that.
+
+But now AI is the buzzword. I mean, you can blame the generative side of things, but we aren't quite using generative, but we're using what I believe you refer to as traditional AI, actually.
+
+[00:07:54] Justin Grammens: Yeah, exactly. Now, how have you seen the baby boomer population, you know, age, I mean, as, as that really sort of lit a fire under the need for these types of technologies?
+
+[00:08:02] Satish Movva: Yeah, absolutely. I think if you look at it, the early wave of aging folks moving through the pipeline in the United States, where all of them were the second world war post generation, and it's interesting because they were the scarcity generation. They were the generation that. Asked for nothing, didn't feel entitled about anything.
+
+And so their way of accessing technology and their way of aging and accepting aging is very different than the boomer generation that's flowing through the pipeline now. You know, we have the leading edge of that. The boomer generation tends to be much more attuned to technology, much more attuned to, well, how can I empower myself well.
+
+To take care of myself, they're less accepting of aging as something of a destiny and they are actually trying to assert control and power over their aging process. And so they're looking for the tools and technologies that would help them age better. And so we see that very, very starkly in the kind of folks we take care of.
+
+[00:09:06] Justin Grammens: Yeah, it was a book that I read recently, I think it was called the AI we see, but it was about, and I'm spacing her name, but I'll go ahead and put links to a lot of these books and stuff that we talk about in the liner notes. But she was talking to her aging mom and her mom's like, so what does this AI thing, you know, like I can say her mom's in her eighties or whatever.
+
+And, you know, why is people talking about this AI thing? Because I don't think it can even be used for me, right. That there's no thing. And her response back to her was what about self driving cars, right. Imagine if you now have the capability to go anywhere you want at any time and you don't have to drive anymore.
+
+And it just, she said a light bulb sort of went off in her aging mom's head because she was like, that is a real world application, right? And so I think you're right. I think a lot of the older generation here think that it's just newfangled technology that doesn't impact them. They maybe haven't seen all the applications yet.
+
+And you're probably seeing that too when you go out and try and sell this product to people. You probably get a little bit of a, ah, this ain't for me, I don't need this.
+
+[00:09:57] Satish Movva: Yeah, no, without a doubt. And it's exactly right that the example you gave, because I'm here based in Florida. One of the largest senior populations is in the villages, just north of Orlando.
+
+It's the largest concentration of people. Purpose built communities just for seniors, and they've had driverless cars there now for two or three years because it's a master plan community. It's no other cars on the road other than golf carts, so they were able to train the AI around all of those vehicles really well, and they've been using it and taking it as a fact of life for two or three years now.
+
+So that's where, you know, it's coming in through those normal things that you would use every day. That you're starting to see AI bleed in and those light bulbs going off saying, okay, now I see it. Now you can go to the other end of the spectrum and then suddenly you're trying to throw a humanoid robot into a care home and say, Hey, this will take care of you.
+
+Those kinds of things are not being accepted. Well, I mean, there was this very interesting story I heard the other day. About this, uh, uh, senior living care home that had, uh, put in robots into, and these were just several robots that would bring you things from a central location to your room or whatever.
+
+But the first day they were introduced, the residents, some of them just started crying because they thought the robots were going to replace the care staff. But once it was explained what they were there for, so this is going to get you, fetch you that Coke or whatever you need, and deliver it to your room, then it became a lot less scary and a lot more accepted.
+
+And then they started talking positively about, okay, how AI can do those mundane things that I don't necessarily need a human being to do.
+
+[00:11:35] Justin Grammens: Yeah, for sure. Now, how do you think people define artificial intelligence out there, even how do you define it? It's such a broad term. That's one of the things I like to ask people that are on the program is maybe, or if somebody says you're working in AI today, what does that mean to you?
+
+[00:11:49] Satish Movva: Yeah. Being as long in technology as I've been, I've seen all the other different incarnations of AI from the expert systems of old to deep learning to generative now. I mean, to me, AI is any time we can take a full mass of data and extract some consistent pattern out of it. That's the way we are using it, so my definition may be limited to my use case.
+
+But for example, machine learning and deep learning are two things that we use a lot. And those to me are AI and where AI AI prior to generative coming on the scene. And in that particular instance, machine learning, I'll give you an example. I mean, our wearable is on the wrist of the dominant arm, and it's tracking all of the activities of the arm where the wrist is in 3D space, the angle of the elbow and the angle at the shoulder.
+
+So it always knows what the gestures are that are being done. So we were able to train machine learning algorithms that said, okay, if you see this repeating pattern, Then it's a fork being lifted to the mouth, so the person is really eating. But that to me is just machine learning. You're training it with a vast quantity of data and you're giving it an archetype and saying, okay, if this pattern occurs recurrently enough in these settings, then it must be eating.
+
+That to me is machine learning. We just extracted out of a whole volume of data, a single thread that's a pattern of something. So that, to me, is the definition of machine learning, which is the core thing of AI. Now, deep learning, which is underlying everything that generative does, it's all neural nets and deep learning underneath.
+
+The way we use that in deep learning back in 2015, when we launched our initial pilot, We essentially looked at all of the activity and behavior that an individual was performing and exhibiting. And then we labeled every fall, every urinary tract infection, and every episode of depression. And we essentially trained the deep learning that said, if these are all the activities and behaviors this person did, and they had this labeled event happen, Do you see any correlation, not causation, but correlation in these activities and behaviors that almost always seems to end in this particular labeled event?
+
+And for me, that was, you know, it just took a whole volume of data, again, found a pattern and found a correlation that may not have been apparent to the human eye. And that to me is AI, at least again, in my limited world of elderly care, that's what I focus on.
+
+[00:14:14] Justin Grammens: Yeah, for sure. The book I was talking about was called The World's IC, and it's Dr.
+
+Fei Fei Li, and she was known as the creator of the ImageNet, which was kind of how they started doing all of these first hand recognition and, you know, a lot of the computer vision stuff. But as I was thinking about what you were saying with regards to labeled events, because, yeah, I totally agree. I love the thinking that AI is, again, it's sort of like it's backed or underneath of it is this machine learning.
+
+And when you and I went to school, people were writing computer programs with if then else statements, right? Based on the input, it ran through the program and it was a specific output. Now, what we're doing is we're taking inputs and outputs and the machine is writing all of the correlations and it's using the neural net to basically make the decisions along the way.
+
+Did you find any challenges in getting that output state, right? So you've got a lot of stuff coming in here. But you needed to obviously have outputs in order to train your stuff.
+
+[00:15:06] Satish Movva: Yeah, that in fact was the largest or rather the most complex thing we had to do. So when we launched in 2015 and we rolled our product out into care homes, we actually had to send our nurse in every week.
+
+to label every fall, every urinary tract infection, every depression. She actually administered the questionnaire, the depression questionnaire herself to find the current state. It is still the hardest task, you know, because without those labeled events, what are you going to train against? And to give you another example, and this is a very current example, right?
+
+So, Since 2015, when we were commercially available or in the commercial market, we've collected literally millions and millions of data points on elderly people. Along the way, we've compiled the largest real world fall database in the world. Nobody else has more real world fall database than us. Down to the accelerometer, gyro, everything, and the gesture they use when they try to fall backwards and their hands go in the air, all of that is in there.
+
+But for us? Still, getting to know and understand when a fall happened is the most diciest of propositions, because labeling it becomes a really difficult thing. So, for example, we're training new machine learning models on fall detection with some additional sensors that we are using, and we wanted to find all the labeled events.
+
+One, we had to go first find, if somebody falls in the care home, we got to go talk to the care staff and say, okay, was this a documented fall? So we need to find somebody who has witnessed it and can document it. That's only available maybe half the time. The other half, either the person fell, then got up by themselves, dusted themselves off and went on, or somebody helped them up and they found there was nothing really wrong and everything was okay, so they never reported it.
+
+So those things, because they are not labeled as a follow, can really tune my algorithm the wrong way. Because that was a true fall, but because I didn't have a label associated with it, that gets jumped. Yeah. And that becomes very hard to differentiate. So one of the things we are looking at right now is partnering with other companies that have certain video cameras in certain locations to see every time if we see a fall, They're seeing a fall in the video camera as well.
+
+[00:17:23] Justin Grammens: Now,
+
+[00:17:23] Satish Movva: because it's a highly regulated industry, cameras are generally not allowed in the private spaces in the care homes in the United States. Unless you are somebody with dementia, and maybe you're allowed to have one in the bedroom. Nowhere else are you allowed to have cameras. So it becomes harder to do that.
+
+So that's one recent example. But even going back just into our heating train, right? We actually had to get common area video streams. Of people eating and correlate them on our devices to see what the accelerometer gyroscope data look like point in time. So believe it or not, we actually created entire video annotation tools that you could real time series, show the video and then show underneath.
+
+You know, the accelerometer gyro data and be able to annotate in real time on the video slides, say, okay, this was the eating and these were the sensor readings we were getting. So that's how we were actually able to train the machine learning algorithms for eating.
+
+[00:18:21] Justin Grammens: Yeah. Yeah, I know it is. It's all about the data, right?
+
+I mean, and I talked to a lot of companies that they're like, Oh yeah, you know, we, we want to do this. We want to do something in our product, you know, with X, Y, and Z, we want to, you know, solve this particular problem. And it sounds great. But you got to get the data and then of course it needs to be in a format, like you said, that you can actually use and might be a lot of data cleaning and massaging that needs to happen and needs to be trained a certain way, right?
+
+So you guys have been doing this for a long time, kind of working your way through this.
+
+[00:18:47] Satish Movva: Yes, I'm doing it in house, I might add, because one of the things I see now is I get the incredible amounts of cold calls saying, oh, we're an annotation company, we can annotate your data and label your data using humans to watch it.
+
+We didn't have that luxury back in 2015 when we were doing this.
+
+[00:19:02] Justin Grammens: Yeah. I mean, you hear about Mechanical Turk. You're familiar with that service. Yeah.
+
+[00:19:05] Satish Movva: Amazon. Yeah.
+
+[00:19:06] Justin Grammens: I'm sure you could have farmed it out to those guys if you wanted to, but now you own the data you, I mean, that's your intellectual property, right?
+
+That's beautiful. You guys have that. You talked about doing it in house. I'm wondering, are you selling this outside of the United States? I mean, this is a common, it's a worldwide problem, right?
+
+[00:19:20] Satish Movva: It is a worldwide problem. Uh, in fact, it's a problem throughout any developed nation. One of the things that happens is that the minute a country gets developed to a certain stage, they start having fewer and fewer children.
+
+And the minute you do that, you have less and less people to take care of the elderly. And unless you have a robust immigration model like the U. S. does, you're not going to get these new caregivers to help take care of the elderly. So it is truly a global problem. It goes the entire spectrum, right? So even though we are probably the most developed nation on the planet, we don't have as bad of an issue because of our immigration.
+
+But you go to the other end of the spectrum, you look at a country like Japan, right? You might have entire towns and villages with nobody below the age of 70 there, because they're such a super aged society, but they don't have an immigration model either that can bring in caregivers. So the technology we are developing is useful worldwide.
+
+Prior to the pandemic, we were actually available in Japan and we had people starting to use them as a proof of concept. But post pandemic, we are not in Japan, but today we are in, you know, have a little footprint in Canada. We just have started expanding our footprints in Europe now. So Switzerland, France, Brussels, and Luxembourg and other places.
+
+We aren't yet in Germany because the rules and regulations are very, very different there. But up to your point, this is a global issue. Aging is a global issue. Not having enough caregivers is a global issue. Not having enough human observation is a global issue. Yeah. And even when you do have caregivers, like in the United States, we have caregivers that can take care of people, but the issue is the turnovers are so high that you're not getting the baseline being well to understand when what somebody's anomaly.
+
+So for human observation to work, you need to have the same person watch the individual for longitudinal periods of time, so you understand. What the baseline is, but if you have a constantly rotating character of people coming in to take care of an individual, you lost that too. So machine augmentation of human observation is going to be critical for taking care of the elderly going forward.
+
+[00:21:26] Justin Grammens: Yeah. And I think that was one of the things that I talked about at the NIC conference was, and we're seeing it across senior housing and, and home healthcare. Hospice. I'm going to be doing a presentation here in a couple weeks at this home health care and hospice conference, but yeah, it's the lack of caregivers.
+
+I mean, obviously it's a declining population with regards to the caregivers and the elderly are getting older, right? And so you've got this sort of this dichotomy that's basically happening where I believe that you're not gonna be able to take care of the people because without this technology. It was funny when I heard this, but it makes total sense that actually the more advanced a country gets, the more rich they get, actually they start having less kids, right?
+
+That went against my initial sort of, you know, my, my gut reaction because I'm like, well, now you have the resources and you have a lifestyle that is great. And now you're going to start having five, six, seven kids, right? But no, it's actually the opposite. And then somebody had told me, yeah, if you don't have a whole lot of resources or you're in a third world country, you actually need to have a lot of kids because some of them are going to die.
+
+[00:22:19] Satish Movva: Exactly. Yep. Yeah, yeah. No, it's, it's fascinating to see all those. And then it's held true. I think Japan had negative population growth now for three or four decades. Wow. And even here in the U S if you discount immigration, we are below the replacement level, it's supposed to be 2. 1 kids per person. I think we are at 1.
+
+8 now in the U S.
+
+[00:22:39] Justin Grammens: Wow. I was thinking about healthcare. I mean, some of these products can sort of live and die based on if they get reimbursed, right? Have you guys had to deal with some of those types of things? Like kids that picked up by insurance or not?
+
+[00:22:49] Satish Movva: Yeah, no, it depends too. You know, in the aging end of the spectrum of healthcare that we're in, we are primarily in a private sector.
+
+Pay type of setting. You're not doing any kind of government reimbursement. We are primarily in senior living. That's independent living, assisted living, and Alzheimer's dementia care centers, which in the U. S., unlike other countries, are mostly private pay. So, you know, if I was putting my dad in one of these facilities, I would be the one paying the rent for that.
+
+To live in that building and to have that assistance. So in that model, the return on investment for the building operator to put our technology in is because we are predicting and potentially preventing some of these declines of an individual. The person stays there longer, which means the operator of the building gets more continuous rent revenue streams so they can afford to keep the building open.
+
+So for them, it's worth putting CarePredict in if they're going to get 39 percent reduction in hospitalization or a 69 percent increase in length of stay in the building. which are the, you know, the peer reviewed studies that use CarePredict actually showed that. So for them, it's important to do it that way.
+
+But now, post pandemic, this is a very interesting thing that's happening, Justin. This entire senior living world has suddenly become part of the healthcare spectrum. So the Medicare Advantage, the primary care risk bearing entities are suddenly looking at senior living and saying, Look, you got a hundred people in one building.
+
+It's much easier to service a hundred people using one nurse practitioner zipping through the whole building than expecting these hundred people to go to a hundred different primary care offices and get seen by a hundred different doctors. So now you have more of this entire value based care model coming into the senior living industry saying, if I can even prevent that hospitalization, Then I've just, you know, retained this person in a better care setting.
+
+I've saved all that money and I've taken better care of them. Cause if you're looking at the economics of it, so I think what 56 percent of Americans today are on Medicare advantage and CMS, which is a center for Medicare and Medicaid services had said their goal in four years, I believe, is to have a hundred percent of.
+
+The Medicare population on Medicare Advantage plans and with Medicare Advantage plans, CMS gives them maybe based on the acuity level of the person and it's, uh, you know, indexed to the economics of the county zip code and all that, they might give them 30, 000, 40, 000 per person and say, go take care of this person, this 30, 000 or 40, 000 has to pay for everything for this year for this individual.
+
+Hospitals, medicines. Physical therapy, everything. Now, the Medicaid Advantage plans are saying, okay, we got this bundle of money for this population. We're going to contract with a risk bearing entity like a primary care provider and say, okay, you take the risk, we're going to give you whatever, maybe, I'm just making up numbers, maybe 60 70 percent of that 35, 000, and you go take care of this person, and whatever savings you have, So now the risk bearing entity is going to do their damnedest to take care of this person every day so they never end up in the hospital.
+
+Yeah. Put the model on its head, because before, when did you see a primary care? Two times a year. Right. Or maybe one time a year. And they never knew anything about you until you showed up in the ER. But now there's a nurse practitioner practically showing up every week in the building, asking how you're doing, you're getting better care, you're living longer, so you're not going to the hospital at all.
+
+So value based care is transforming that, and there is a place for Somebody like CarePredict who are providing real time, uh, you know, human augmented data, that is actually predictive and preventive in nature. It's like entirely transformative for the value based data industry, and they're finding that our data is absolute gold.
+
+And we've been lucky that we have kind of been on the leading edge of that for several years now, so that your cognition is coming through, and it's really showing in how fast we are growing.
+
+[00:26:50] Justin Grammens: Yeah. Sounds great. Yeah. No, I know that. Yeah. They have an incentive to keep people alive because you're right.
+
+There's a uptick for them. They can take that differential profit margin off of it, which is a win win for everybody. So that's, that's fabulous. So you guys have been growing here. You guys hiring or, um, Expanding the team in some ways.
+
+[00:27:09] Satish Movva: No, we've been growing for the last year, year and a half post pandemic.
+
+There was a lot there and we're growing and we're constantly adding people. We're still only, you know, a smallish company. We're only about 32 people with another 10 to 12 outsourced contractors working on things. But yeah, but we're growing.
+
+[00:27:27] Justin Grammens: Good, good. That's great to hear. So what, what is a day in the life for you of the CEO of this company?
+
+[00:27:35] Satish Movva: Well, you know, this as well as I do, Justin. So if you are a startup CEO, that's like running a restaurant, right? You gotta be able to do everything. You know, in the morning, I might be on a call with a design firm on selecting a new component or working on something mechanical or trying to give some business perspective to the data scientist.
+
+It's all of those things, and you need to be able to jump in and do any of those things when someone needs help. So it's pretty much, you know, the people portion of it is a certain aspect, but because of how we are set up and how we are focused so much on elder care and our technology being such a differentiator, The vast majority of my time each day is spent working with the technology team and with the business teams, trying to figure out what is the next part of this journey?
+
+What's the next feature? How are we going to position it? What is the value and how do we communicate it? It's all of those things. And it seems like every day is like every other day. That seems to be what we do.
+
+[00:28:34] Justin Grammens: Yeah. Well, you've been doing it for a long time, so you must get a lot of joy and benefit out of, you know, working in this, Particular, uh, type of industry that just has a lot of value, right?
+
+That it, it, it actually can really change people's lives.
+
+[00:28:49] Satish Movva: Oh, without a doubt. I mean, this company for me is a labor of love. It's a mission company. The only reason I started this company just to take care of my own parents. Dad is 95 now and lives with me, so I am his primary caregiver every day. You know, and mom would have been 85, but back in 2013 when I started this company, they were living 10 minutes away from me and I spoke to them every day.
+
+When I show up in person, I would find new and interesting things I had no knowledge about. Had to take them to the ER that day or have to screw up my entire following week of schedules because I have to take them to a specialist appointment. This unpredictability in their health was just causing havoc in my life.
+
+And I'm not alone. That's the sad part, right? Yeah. So for the very first time in all of human history, we have the largest cohort of humans still taking care of parents while taking care of children, the sandwich generation. Never happened before. It's a good thing, because people are living longer, and this medicine has gotten better, and quality of life is better.
+
+But it's putting an unimaginable stress for people in the middle. Because you're trying to burn it at both ends, if you will. Burn the candle at both ends.
+
+[00:29:55] Justin Grammens: Right, right. Are you self funded? Bootstrapped all the way through this entire thing?
+
+[00:29:59] Satish Movva: Uh, no, no. Initially I was because I had a good exit from the last one.
+
+And then, you know, we brought in, uh, venture capital very early on into this company. We got into this company back in 2015. I had started the company in 2013. Gotcha. And, um, we just finished our Series A3 last year. Uh, and hopefully looking at Series B next year when the markets get better.
+
+[00:30:21] Justin Grammens: Yeah, it's a pretty slow time, I think, for everyone trying to raise money.
+
+You touched a little bit on generative AI. I mean, I could see some applications there, right? I mean, to me, the gen AI is really kind of being able to put a conversational interface or a summarization or natural language processing on top of all this backend data, right? You guys are probably exploring some of those areas.
+
+[00:30:40] Satish Movva: We are, and again, it's in the consumption side of things. So, you know, we are generating such a mass of data points, and we're coming up with all the insights, so you have a population summary dashboard that's showing who's at a UTI risk, and who's at depression risk, and things like that. For somebody to scan a dashboard and using their human cognition to evaluate each one, it takes more processing power than a chat GPT or generative type model looking at the same data.
+
+And extracting some of those dimensions and being able to say, okay, you only have these four people at a very high risk of UTI, everything else can be handled tomorrow kind of deal. Summarization of vast quantities of data. That's something we're finding has applicability. There's a conversational use.
+
+You know, we don't do that today in our product, but we know of others that are trying to have conversational companions for elderly folks and things like that. I think in my view on that, Justin, is that unless Our generative technology has the contextual outline of the individual that it's conversing with.
+
+You know, their life story, their experiences, their time, and what is relevant to them, and has that context. In those conversations, it becomes very hard. There have been other conversational systems that came out over the last three to five years, and they're a novelty at first, but then they lose the novelty and they stop being used.
+
+What do we use Google and Alexa these days for? What's the weather like? Setting a alarm? That's all we do mainly with it. So they kind of became limited because they didn't have the contextual information. I think with generatives, it's going to be different if you can bring the context of the individual.
+
+Especially important is going to be for folks with dementia. As the disease progresses, they tend to regress in time, and if the generative model can keep up with that and understand that their frame of reference is shifting backwards, so somebody who's 85 now and with dementia, they might be in 1960s in their mind and the generative models.
+
+Technology has to move its time window back to 60s and understand the context of the 60s. So when they're having conversations, thinking they're in the 1960s, the generative tech is keeping up with them because its frame of reference has changed too. Those are kind of the innovations that I'm expecting to come.
+
+I haven't seen any of those yet. So I'm just kind of riffing off them with you on them. But those are the kind of things that need to happen before you get true conversation with meaning. In the elderly space for, you know, real time conversational type models.
+
+[00:33:16] Justin Grammens: Yeah. And we start kind of bleeding into some of the virtual reality stuff.
+
+I've seen companies bring that to fruition where people that have dementia or Alzheimer's now can get put in these, they can get immersed basically. And what was it like on their wedding day, you know, or what was it like when, you know, their first child was born, right. And then they found that these medical studies, right.
+
+They, their memories start to come back because they remember them a little more richly. But yeah, so you guys would augment something like that potentially for a solution, but you guys are staying very much, of course, in the area that you've lived in, which is really sensor based movement, I guess, right?
+
+[00:33:50] Satish Movva: Yeah, absolutely. And generally it would just be in summarizing that wealth of data into meaningful sound bytes for whoever's taking care of these individuals.
+
+[00:33:59] Justin Grammens: Yeah, for sure. Before we kind of wrap it up here and you can talk a little bit about how people reach out to you and your company and all that sort of stuff, I, I always do like to ask, you know, like if I was just starting out in this field, say I just came out of college or maybe I'm doing a career change, I'm moving into sort of healthcare and, and these connected products and senior living and all that type of stuff.
+
+It's like. Where would you suggest I go? Are there any conferences, any, um, books to read, uh, areas that I should be sort of maybe boning up on when it comes to healthcare and healthcare data and AI?
+
+[00:34:28] Satish Movva: Yeah, I think the way I approach the problem, I think at least for me, it worked really well and that was, you know, Seeing the problem and then trying to find the solution.
+
+I see a lot of people coming with a bunch of solutions and trying to apply or find a problem to apply them to. Very rarely does that work. It needs to be a problem you've found that meaningfully resonated with you at some personal, deep level. And then you start looking for, well, what technologies can I apply to make that work?
+
+I think that would be the right way for you to get into elder care and things like that. If you have a grandparent that, You see aging before you or you're visiting your grandparents or your parents in a care home of some sort and you start seeing how they're living and what issues they are facing and then really try to understand what technologies that you're aware of may actually apply to them.
+
+I think that would be truly the way to start down this path. You're looking about at elder care in general and age technologies, age tech. You know, the conference are few and far in between, but if you look at care homes, yeah, you know, National Association of Home Care and Hospice is really good. And I believe that's where you might be speaking soon, Home Care 100.
+
+And in the senior living care home side, Argentum Trade Show is one, as well as the Leading Edge Trade Show. Those are two of the big ones. Apex trade shows for the industry where you see care home operators, people who sell elderly folks in those buildings. They are all there and they talk about how some of the issues they're facing that might give you inspiration for whatever problem or solution you're trying to bring to this industry.
+
+And you know, it's more than anything, we all have parents and grandparents. Observe them, look at them, and see the travails they are going through. It is a huge, rich field of just problems waiting for solutions.
+
+[00:36:22] Justin Grammens: Yeah, well said. Well said. That was great. That was great. Well, um, how can people reach out and connect with you?
+
+[00:36:29] Satish Movva: Yeah, uh, absolutely. They can reach out to me on LinkedIn anytime. Satish Mova, CarePredict. Very easy to find, you can Google me, that's the best way to connect with me and please let me know how I can help or what it is that you're looking for and I'll be glad to connect and help.
+
+[00:36:45] Justin Grammens: Cool. Yeah. Like I said, we'll put links off to your website, links off to your LinkedIn as well.
+
+You know, was there anything that we didn't cover? I'm, you know, maybe the question that I didn't ask or anything, but I mean, I thought we had a good chat here, but I'm always kind of leave the option open if you're, you were a key point that I missed.
+
+[00:37:00] Satish Movva: The only thing I would add is, you know, going back to our Rolls Royce engine, right?
+
+It's the same deal. You look at cars these days and you care with progressive insurance, you got to put that little adapter in the thing. Yeah. That tells them everything about how you're driving the car. So in essence, what they're doing, Justin, is real time underwriting the way you drive. That model is going to have to come to health insurance at some point because it's not sustainable to spend as much as we do on healthcare in the United States.
+
+At some point. We are looking at continuous telemetry from the human body, especially for the seniors. So think of it that way. It's going to be a treasure trove of data coming out in the future. Yes, there are privacy issues and all of those that we all have to navigate and you have to do it very cautiously and gently and in a dignified manner.
+
+But the future of, Human beings, I believe, is the connected human and the telemetry going into the cloud and all kinds of AI type algorithms working on that. Not only to predict and prevent, but also anticipate your need and provide it, you know, well before you even think about it. And I think that's where the future is.
+
+[00:38:08] Justin Grammens: Wow. I got to have you back. We got to talk another hour, basically, about the connected human. And with your background in data security, you sort of talked about into that space. I think we could talk for another 60 minutes, I think, on this whole thing. Uh, based on another podcast guest that I had on here recently, talking about a Netflix movie called Atlas that I just saw recently.
+
+I don't know if, I don't know if you saw that at all.
+
+[00:38:27] Satish Movva: Not yet, but it's in my list. Cause it's got Jennifer Lopez on it. Yes, it does. It
+
+[00:38:31] Justin Grammens: does. It does. It was fascinating. It was a really, really good watch. So I would highly suggest it, that you check it out. But Tish, we should have you back and talk about the Connected Human.
+
+That's where things are going. I a hundred percent agree. And we have to make sure that of course, there are certain guardrails that are put in place and all that sort of stuff, but talk about what AI look like in the next five to 10 years. So, well, thanks again for today and just all the background and all the work you guys are doing at CarePredict.
+
+I know you guys are leading in this space. I mean, whenever I take a look at elder care. You guys always come up at the top of the list with regards to companies that are actually making improvements in this space. So I respect your work and uh, thank you so much for taking the time to be on the Playa podcast today.
+
+[00:39:08] Satish Movva: Justin, thank you very much for this opportunity and allowing me to speak to you about this very important topic. Um, area around elder care and how AI can help. Thank
+
+[00:39:18] Justin Grammens: you. All right. Talk soon.
+
+[00:39:21] AI Announcer: You've listened to another episode of the Conversations on Applied AI podcast. We hope you are eager to learn more about applying artificial intelligence and deep learning within your organization.
+
+You can visit us at AppliedAI. mn to keep up to date on our events and connect with our amazing community. Please don't hesitate to reach out to Justin at AppliedAI. mn if you are interested in participating in a future episode. Thank you for listening.
